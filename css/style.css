@@ -15,6 +15,8 @@ a {
 }
 /* BASE STYLE ENDS */
 
+
+/* Navigation Style STARTS */
 .back-drop {
     margin-top: 4rem;
     position: fixed;
@@ -188,4 +190,4 @@ nav .hamburger-button::after {
     }
 
 }
-/* NAVIGATION MEDIA QUERIES ENDS */
+/* NAVIGATION STYLE ENDS */
