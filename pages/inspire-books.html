@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="../css/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        <title>Inspire Books | Inspire Academy</title>
-    </head>
-    <body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Inspire Books | Inspire Academy</title>
+</head>
+
+<body>
     <div class="back-drop"></div>
-        <header>
-            <div class="navigation-background__color">
-                <div class="navigation-container">
-                    <div class="navigation-logo">
-                        <a href="#">
-                            <img src="../images/logo-light.png" height="60" alt="Inspire Academy logo white">
-                        </a>
-                    </div>
-                    <nav>
-                        <div class="hamburger-container">
-                            <div class="hamburger-button"><div class="before-after"></div></div>
-                        </div>
-                        <ul>
-                            <li><a href="#">INSPIRE BOOKS</a></li>
-                            <li><a href="22century.html">22 CENTURY EDUCATION</a></li>
-                            <li><a href="tutoring.html">TUTORING</a></li>
-                            <li><a href="service.html">SERVICES</a></li>
-                            <li><a href="aboutus.html">ABOUT US</a></li>
-                        </ul>
-                    </nav>
+    <header>
+        <div class="navigation-background__color">
+            <div class="navigation-container">
+                <div class="navigation-logo">
+                    <a href="#">
+                        <img src="../images/logo-light.png" height="60" alt="Inspire Academy logo white">
+                    </a>
                 </div>
-            </div>
-        </header>
-        <!-- Mobile Navigation Bar -->
-        <div class="mobile-navigation">
-            <nav>
+                <nav>
+                    <div class="hamburger-container">
+                        <div class="hamburger-button">
+                            <div class="before-after"></div>
+                        </div>
+                    </div>
                     <ul>
                         <li><a href="#">INSPIRE BOOKS</a></li>
                         <li><a href="22century.html">22 CENTURY EDUCATION</a></li>
@@ -44,21 +34,34 @@
                         <li><a href="aboutus.html">ABOUT US</a></li>
                     </ul>
                 </nav>
+            </div>
         </div>
-        <main>
-            <!-- Inspire Books Logo - qod-dante -->
-            <img src="../images/inspire-books-logo.png" alt="Inspire Books Logo" width="auto" height="500">
+    </header>
+    <!-- Mobile Navigation Bar -->
+    <div class="mobile-navigation">
+        <nav>
+            <ul>
+                <li><a href="#">INSPIRE BOOKS</a></li>
+                <li><a href="22century.html">22 CENTURY EDUCATION</a></li>
+                <li><a href="tutoring.html">TUTORING</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="aboutbook">
+        <!-- Inspire Books Logo - qod-dante -->
+        <img src="../images/inspire-books-logo.png" alt="Inspire Books Logo" class="logo-inspire">
+        <div class="book">
             <section>
                 <!-- The Book - qod-dante-->
                 <div>
-                    <img src="../images/Maths_Simplified_Grade_12_Study_Guide.jpg" alt="Maths Simplified Grade 12 Study Guide"
-                        width="auto" height="490"
-                                                />
+                    <img src="../images/Maths_Simplified_Grade_12_Study_Guide.jpg" alt="Maths Simplified Grade 12 Study Guide" class="books" />
                 </div>
-                    <div>
-                        <a href="#">BUY</a>
-                        <a href="#">ITEM PRICE</a>
-                    </div>
+                <div>
+                    <a href="#">BUY</a>
+                    <a href="#">ITEM PRICE</a>
+                </div>
             </section>
             <!-- Section of the Book's description and Reviews - qod-dante -->
             <section>
@@ -76,10 +79,8 @@
                 <article>
                     <!-- Books Description -->
                     <h4>Book Description</h4>
-                    <p>Maths Simplified deconstructs and simplifies Maths to its core basics to enable learners to build a solid
-                        foundation of understanding so that they can reach their full potential and achieve excellence in Maths.
-                        Colour-coded notes, step-by-step worked examples, and 160 carefully selected exam questions make learning
-                        and understanding Maths much easier.
+                    <p>Maths Simplified deconstructs and simplifies Maths to its core basics to enable learners to build a solid foundation of understanding so that they can reach their full potential and achieve excellence in Maths. Colour-coded notes,
+                        step-by-step worked examples, and 160 carefully selected exam questions make learning and understanding Maths much easier.
                     </p>
                     <h4>In this book, students will find other special features for easier learning, such as:</h4>
                     <ul class="book-list">
@@ -95,64 +96,66 @@
                     <p>The book is easy to use and when studied diligently and with focus, will fully prepare Grade 12 learners for success in their exams.</p>
                 </article>
             </section>
-        </main>
-        <!-- Reviewers Point of View -->
-        <section>
+        </div>
+    </main>
+    <!-- Reviewers Point of View -->
+    <section>
+        <div>
+            <h5>Name Surname</h5>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-line"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos eaque aut recusandae consectetur et voluptates veniam voluptas, doloribus consequatur!</p>
+        </div>
+        <div>
+            <h5>Name Surname</h5>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-line"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos eaque aut recusandae consectetur et voluptates veniam voluptas, doloribus consequatur!</p>
+        </div>
+        <div>
+            <h5>Name Surname</h5>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-line"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos eaque aut recusandae consectetur et voluptates veniam voluptas, doloribus consequatur!</p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div>
             <div>
-                <h5>Name Surname</h5>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-half-line"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos eaque aut recusandae consectetur et voluptates veniam voluptas, doloribus consequatur!</p>
-            </div>
-            <div>
-                <h5>Name Surname</h5>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-half-line"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos eaque aut recusandae consectetur et voluptates veniam voluptas, doloribus consequatur!</p>
-            </div>
-            <div>
-                <h5>Name Surname</h5>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-half-line"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos eaque aut recusandae consectetur et voluptates veniam voluptas, doloribus consequatur!</p>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer>
-            <div>
-                <div>
-                    <h5>Subscribe to Inspire via Email </h5>
-                    <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, perferendis.</small>
+                <h5>Subscribe to Inspire via Email </h5>
+                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, perferendis.</small>
                 <form>
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
                     <input type="button" placeholder="Subscribe" value="subscibe">
                     <small>© Inspire Academy</small>
                 </form>
-                </div>
-                    <div>
-                        <small>Payement Methods</small>
-                        <img src="../images/kindpng_1104447.png" height="50" width="auto" alt="Peach Payments logo">
-                        <img src="../images/Payfast-Logo-White.png" height="50" width="auto" alt="Payfast logo">
-                    </div>
-                    <div>
-                        <small>Social Media</small>
-                        <i class="ri-facebook-fill"></i>
-                        <i class="ri-instagram-line"></i>
-                        <i class="ri-twitter-fill"></i>
-                        <i class="ri-phone-fill"></i>
-                        <i class="ri-mail-send-fill"></i>
-                  </div>
             </div>
-        </footer>
-    </body>
+            <div>
+                <small>Payement Methods</small>
+                <img src="../images/kindpng_1104447.png" height="50" width="auto" alt="Peach Payments logo">
+                <img src="../images/Payfast-Logo-White.png" height="50" width="auto" alt="Payfast logo">
+            </div>
+            <div>
+                <small>Social Media</small>
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-phone-fill"></i>
+                <i class="ri-mail-send-fill"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

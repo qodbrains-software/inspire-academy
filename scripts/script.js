@@ -6,27 +6,107 @@ const backDrop = document.querySelector('.back-drop');
 
 let navigationOpen = false;
 
-hamburgerButton.addEventListener('click', function () {
+hamburgerButton.addEventListener('click', function() {
     if (!navigationOpen) {
         mobileNavigation.style.display = 'block';
         backDrop.style.display = 'block';
         navigationOpen = true;
-        
+
     } else {
         mobileNavigation.style.display = 'none';
         backDrop.style.display = 'none';
         navigationOpen = false;
-        
+
     }
 });
 
 backDrop.addEventListener('click', function() {
-    if(!navigationOpen) {
-    navigationOpen = true;
-    } else {
-        mobileNavigation.style.display = 'none';
-        backDrop.style.display = 'none';
-        navigationOpen = false;
-    }
+        if (!navigationOpen) {
+            navigationOpen = true;
+        } else {
+            mobileNavigation.style.display = 'none';
+            backDrop.style.display = 'none';
+            navigationOpen = false;
+        }
+    })
+    // MOBILE/ HAMBURGER NAVIGATION SCRIPT ENDS!!
+
+// CAROUSEL
+
+const track = document.querySelector(".main-container");
+const slides = Array.from(track.children);
+console.log(slides)
+const nextbtn = document.querySelector(".next");
+const prevbtn = document.querySelector(".prev");
+const dotsContainer = document.querySelector(".dotsContainer");
+const dots = Array.from(dotsContainer.children);
+
+
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+// slides[0].style.left = slideWidth * 0 + "px";
+// slides[1].style.left = slideWidth * 1 + "px";
+// slides[2].style.left = slideWidth * 2 + "px";
+
+const setslides = (slide, index) => {
+    slide.style.left = slideWidth * index + "px";
+};
+
+slides.forEach(setslides);
+
+const moveToSlide = (track, firstslide, targetSlide) => {
+    track.style.transform = "translatex(-" + targetSlide.style.left + ")"
+    firstslide.classList.remove("first");
+    targetSlide.classList.add("first");
+}
+
+// manual carousel
+nextbtn.addEventListener("click", e => {
+    const firstslide = track.querySelector(".first");
+    const nextslide = firstslide.nextElementSibling;
+
+    moveToSlide(track, firstslide, nextslide);
 })
-// MOBILE/ HAMBURGER NAVIGATION SCRIPT ENDS!!
+
+prevbtn.addEventListener("click", e => {
+    const firstslide = track.querySelector(".first");
+    const prevslide = firstslide.previousElementSibling;
+
+    moveToSlide(track, firstslide, prevslide);
+})
+
+
+dotsContainer.addEventListener("click", e => {
+    const targetDot = e.target.closest("i");
+
+    if (!targetDot) return;
+
+    const firstslide = track.querySelector(".first");
+    const currentDot = dotsContainer.querySelector("first");
+    const targetIndex = dots.findIndex(dots => dots === targetDot);
+    const targetSlide = slides[targetIndex];
+
+    moveToSlide(track, firstslide, targetSlide);
+})
+
+
+const slider = () => {
+    let numberOfSlides = slides.length;
+    let i = 0;
+    // [slide 1, slide 2, slide 3]
+    //     0        1       2
+    setInterval(() => {
+            moveToSlide(track, slides[i], slides[i + 1])
+            i++;
+            if (i == 2) {
+                // moveToSlide(track, slides[0], slides[2])
+                i = 0;
+            }
+        }, 6000)
+        // first loop i = 0, i + 1 = 1
+        // i = 0 & 1
+        // i = 1 & 2
+        // i = 2 & 3
+}
+
+slider();

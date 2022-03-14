@@ -1,10 +1,14 @@
 /* RESET STYLE */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 /* RESET STYLE ENDS */
+
 
 /* BASE STYLE */
 
@@ -13,10 +17,13 @@ a {
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 /* BASE STYLE ENDS */
 
 
 /* Navigation Style STARTS */
+
 .back-drop {
     margin-top: 4rem;
     position: fixed;
@@ -29,7 +36,6 @@ a {
     z-index: 201;
 }
 
-
 .mobile-navigation {
     display: none;
     position: fixed;
@@ -40,7 +46,6 @@ a {
     width: 90%;
     z-index: 300;
 }
-
 
 .mobile-navigation nav ul {
     display: flex;
@@ -54,9 +59,7 @@ a {
 .mobile-navigation nav ul li a:hover,
 .mobile-navigation nav ul li a:focus {
     color: #231F20;
-
 }
-
 
 .navigation-background__color {
     position: fixed;
@@ -140,8 +143,12 @@ nav .hamburger-button::after {
     transform: translateY(12px);
 }
 
+
 /* NAVIGATION MEDIA QUERIES */
+
+
 /* desktop view */
+
 @media(min-width: 51rem) {
     .navigation-container {
         width: 80%;
@@ -150,44 +157,394 @@ nav .hamburger-button::after {
         justify-content: space-between;
         align-items: center;
     }
-
     .navigation-container nav ul li a {
         display: inline-block;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #EEEEEE;
         text-decoration: none;
     }
-
     .navigation-container nav ul li {
         padding-right: .8rem;
     }
-
     .navigation-container nav ul {
         display: flex;
         list-style: none;
     }
-
     .hamburger-button {
         display: none;
     }
-    
     nav .hamburger-button::before {
         display: none;
     }
-    
     nav .hamburger-button::after {
         display: none;
     }
-
     .mobile-navigation nav ul {
         display: none;
-
     }
-
     .hamburger-container {
         display: none;
-
     }
-
 }
+
+
 /* NAVIGATION STYLE ENDS */
+
+
+/* CAROUSEL */
+
+* {
+    margin: 0;
+}
+
+
+/* first carousel for inspire book */
+
+.section-container {
+    display: flex;
+    background: url(/images/MATS.jpg);
+    background-size: cover;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    /* position: relative; */
+    /* display: none; */
+}
+
+.article-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: yellow;
+}
+
+.book img {
+    height: 80%;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.product-btns {
+    display: flex;
+    padding: 5px;
+    align-self: flex-start;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-read {
+    color: whitesmoke;
+    text-decoration: none;
+    background: #0076FF;
+    margin-right: 15px;
+    padding: 10px 4px 8px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.btn-buy {
+    text-decoration: none;
+    background: #FF9F00;
+    color: black;
+    padding: 10px 4px 8px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.intro-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.h1-main img {
+    width: 40%;
+    margin: 50px 0px 30px 0px;
+}
+
+.h1-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro .article-text {
+    font-family: Arial;
+    font-size: 1.2em;
+    margin: 10px;
+    line-height: 1.5em;
+}
+
+
+/* End of first carousel for inspire book */
+
+
+/* dots */
+
+.dotsContainer {
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dotsContainer .dots {
+    padding: 5px;
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.dotsContainer .dots:not(:last-child) {
+    margin-right: 5px;
+}
+
+.dotsContainer .dots:hover {
+    background-color: #ffffff;
+}
+
+
+/*End of dots */
+
+
+/* second carousel for inspire book */
+
+.section-container_22century {
+    display: flex;
+    background: url(/images/baim-hanif-pYWuOMhtc6k-unsplash.jpg);
+    background-size: cover;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    /* display: none; */
+}
+
+.century22 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+}
+
+.century22 .bold {
+    font-size: 6em;
+    font-weight: bolder;
+}
+
+.century22 .better {
+    font-size: 2em;
+    display: flex;
+    align-self: flex-start;
+}
+
+
+/* End of second carousel for inspire book */
+
+
+/* third carousel for inspire book */
+
+.section-container_tutoring {
+    display: flex;
+    background: url(/images/tutoring.jpg);
+    background-size: cover;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+}
+
+.tutoring {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 50%;
+}
+
+.tutoring .bold {
+    font-size: 6em;
+    font-weight: bolder;
+}
+
+.tutoring .better {
+    font-size: 2.5em;
+    display: flex;
+}
+
+
+/* End of third carousel for inspire book */
+
+
+/* inspire books */
+
+.book {
+    display: flex;
+}
+
+.book .books {
+    width: 30%;
+}
+
+.aboutbook .logo-inspire {
+    width: 30%;
+}
+
+.aboutbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* End of inspire books */
+
+
+/* carousel */
+
+.max-container {
+    transition: .2s;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    transition: .2s;
+    align-items: center;
+}
+
+.main {
+    transition: .3s;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgba(107, 103, 103, .8);
+    transition: .5s ease-in-out;
+    border-radius: 10px;
+}
+
+.Btns {
+    color: whitesmoke;
+}
+
+.next {
+    position: fixed;
+    right: 14px;
+    top: 303px;
+}
+
+.prev {
+    position: fixed;
+    left: 14px;
+    top: 303px;
+}
+
+
+/* End of carousel */
+
+
+/* media queries */
+
+@media ( max-width: 820px) {
+    /* section-container for all */
+    .section-container,
+    .section-container_22century,
+    .section-container_tutoring {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+    }
+    /* End of section-container for all */
+    .article-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .book {
+        height: 50%;
+        display: flex;
+        order: -1;
+    }
+    .intro .article-text {
+        font-family: Arial;
+        width: 100%;
+    }
+    .h1-main {
+        display: none;
+    }
+    .product-btns {
+        align-self: center;
+    }
+    /* 22century */
+    .century22 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 40%;
+        order: -1;
+    }
+    .century22 .bold {
+        font-size: 2.8em;
+        font-weight: bolder;
+    }
+    .century22 .better {
+        font-size: 2.2em;
+        display: flex;
+        align-self: flex-start;
+    }
+    /* End of 22century */
+    /* tutoring */
+    .tutoring {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 40%;
+        /* width: 50%; */
+        order: -1;
+    }
+    .max-container {
+        transition: .2s;
+        margin-top: 0;
+        overflow: hidden;
+    }
+    .tutoring .bold {
+        font-size: 3.5em;
+        font-weight: bolder;
+    }
+    .tutoring .better {
+        font-size: 1.5em;
+        display: flex;
+        width: 240px;
+        text-align: center;
+    }
+    /* End of tutoring */
+}
+
+
+/* End of media queries */
