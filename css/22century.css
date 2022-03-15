@@ -14,7 +14,7 @@ body {
 .background-color__main::after {
     position: absolute;
     content: '';
-    background-image: url(/images/school.jpg);
+    background-image: url(../images/school.jpg);
     background-size: 484px 484px;
     background-position: right -755px top 1800px;
     background-clip: border-box;
