@@ -1,0 +1,60 @@
+/* inspire books */
+
+.review-stars i {
+    color: rgb(219, 152, 26);
+}
+
+.book-inspire {
+    display: flex;
+    width: 90%;
+    align-items: flex-start;
+}
+
+.book-inspire img {
+    height: 350px;
+}
+
+.aboutbook .logo-inspire {
+    height: 350px;
+}
+
+.aboutbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(219, 215, 215);
+}
+
+.book-description p {
+    background-color: white;
+    height: 150px;
+    padding: 20px;
+}
+
+.book-description h4 {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 150px;
+    border-radius: 0 10px 0 0;
+    text-align: center;
+}
+
+.reviews h1 {
+    font-size: 3.5em;
+}
+
+.reviews h5 {
+    font-size: 1em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews {
+    padding: 0 20px;
+}
+
+
+/* End of inspire books */

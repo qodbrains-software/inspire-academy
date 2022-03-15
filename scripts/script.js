@@ -35,7 +35,6 @@ backDrop.addEventListener('click', function() {
 
 const track = document.querySelector(".main-container");
 const slides = Array.from(track.children);
-console.log(slides)
 const nextbtn = document.querySelector(".next");
 const prevbtn = document.querySelector(".prev");
 const dotsContainer = document.querySelector(".dotsContainer");
@@ -43,7 +42,6 @@ const dots = Array.from(dotsContainer.children);
 
 
 const slideWidth = slides[0].getBoundingClientRect().width;
-
 // slides[0].style.left = slideWidth * 0 + "px";
 // slides[1].style.left = slideWidth * 1 + "px";
 // slides[2].style.left = slideWidth * 2 + "px";
@@ -90,23 +88,15 @@ dotsContainer.addEventListener("click", e => {
 })
 
 
-const slider = () => {
-    let numberOfSlides = slides.length;
-    let i = 0;
-    // [slide 1, slide 2, slide 3]
-    //     0        1       2
-    setInterval(() => {
-            moveToSlide(track, slides[i], slides[i + 1])
-            i++;
-            if (i == 2) {
-                // moveToSlide(track, slides[0], slides[2])
-                i = 0;
-            }
-        }, 6000)
-        // first loop i = 0, i + 1 = 1
-        // i = 0 & 1
-        // i = 1 & 2
-        // i = 2 & 3
-}
+// const slider = () => {
+//     let i = 0;
+//     setInterval(() => {
+//         moveToSlide(track, slides[i], slides[i + 1])
+//         i++;
+//         if (i == 2) {
+//             i = 0;
+//         }
+//     }, 6000)
+// }
 
-slider();
+// slider();

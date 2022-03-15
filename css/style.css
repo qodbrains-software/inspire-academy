@@ -193,22 +193,16 @@ nav .hamburger-button::after {
 
 /* CAROUSEL */
 
-* {
-    margin: 0;
-}
-
 
 /* first carousel for inspire book */
 
 .section-container {
     display: flex;
-    background: url(/images/MATS.jpg);
+    background: url(/images/landing\ back.jpg);
     background-size: cover;
     color: #ffffff;
     height: 100vh;
     width: 100vw;
-    /* position: relative; */
-    /* display: none; */
 }
 
 .article-content {
@@ -223,11 +217,11 @@ nav .hamburger-button::after {
     align-items: center;
     justify-content: center;
     width: 50%;
-    border: yellow;
+    /* border: yellow; */
 }
 
 .book img {
-    height: 80%;
+    height: 100%;
 }
 
 blockquote {
@@ -282,6 +276,7 @@ blockquote {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
 
 .intro .article-text {
@@ -392,35 +387,11 @@ blockquote {
 /* End of third carousel for inspire book */
 
 
-/* inspire books */
-
-.book {
-    display: flex;
-}
-
-.book .books {
-    width: 30%;
-}
-
-.aboutbook .logo-inspire {
-    width: 30%;
-}
-
-.aboutbook {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-/* End of inspire books */
-
-
 /* carousel */
 
 .max-container {
     transition: .2s;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     overflow: hidden;
 }
 
@@ -428,6 +399,7 @@ blockquote {
     display: flex;
     transition: .2s;
     align-items: center;
+    /* border: black solid; */
 }
 
 .main {
