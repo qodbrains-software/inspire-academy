@@ -100,3 +100,21 @@ dotsContainer.addEventListener("click", e => {
 // }
 
 // slider();
+
+let slider = () => {
+    let index = 0;
+
+    setInterval(() => {
+        slides[index].style.display = "none";
+        index++;
+
+        if (index === 3) {
+            index = 0;
+            slides[0].style.display = "flex";
+            slides[1].style.display = "flex";
+            slides[2].style.display = "flex";
+        }
+
+    }, 4000)
+}
+slider()
