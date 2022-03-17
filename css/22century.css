@@ -6,7 +6,7 @@ body {
     position: relative;
     background: #E9E7E5;
     width: 100%;
-    border-radius: 0 320px 0 0;
+    border-radius: 0 300px 0 0;
     height: 100vh;
     top: 60px;
 }
@@ -15,8 +15,8 @@ body {
     position: absolute;
     content: '';
     background-image: url(../images/school.jpg);
-    background-size: 484px 484px;
-    background-position: right -755px top 1800px;
+    background-size: auto 310px;
+    background-position: right -290px top 1470px;
     background-clip: border-box;
     background-repeat: repeat;
     width: 100%;
