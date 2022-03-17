@@ -1,7 +1,11 @@
 /* inspire books */
 
 .review-stars i {
-    color: rgb(219, 152, 26);
+    color: #F1592C;
+}
+
+#star-number {
+    font-weight: bolder;
 }
 
 .book-inspire img {
@@ -10,6 +14,7 @@
 
 .aboutbook .logo-inspire {
     height: 300px;
+    margin-top: 50px;
 }
 
 .logo-img {
@@ -28,6 +33,7 @@
 .book-description p {
     background-color: white;
     padding: 20px;
+    width: 80%;
 }
 
 .book-description {
@@ -36,7 +42,7 @@
 }
 
 .book-description h4 {
-    background-color: black;
+    background-color: rgb(42, 41, 41);
     color: rgb(255, 255, 255);
     width: 150px;
     border-radius: 0 10px 0 0;
@@ -74,16 +80,19 @@
 .buttons-inspire .btn-buybook {
     color: black;
     padding: 8px 10px;
-    background-color: #0076FF;
+    background-color: #FF9F00;
     margin-right: 5px;
     border-radius: 2px;
+    font-weight: bolder;
 }
 
 .buttons-inspire .btn-download {
+    color: whitesmoke;
     border-radius: 2px;
-    background-color: #FF9F00;
+    background-color: #0076FF;
     text-align: center;
     padding: 8px 10px;
+    font-weight: bolder;
 }
 
 .grid {
@@ -93,7 +102,8 @@
 
 .book-btn {
     grid-row: 1 / span 2;
-    justify-self: center;
+    justify-self: end;
+    margin-right: 30px;
 }
 
 
