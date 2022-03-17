@@ -406,33 +406,6 @@ blockquote {
     transition: .3s;
 }
 
-.btn {
-    background-color: transparent;
-    border: none;
-}
-
-.btn:hover {
-    background-color: rgba(107, 103, 103, .8);
-    transition: .5s ease-in-out;
-    border-radius: 10px;
-}
-
-.Btns {
-    color: whitesmoke;
-}
-
-.next {
-    position: fixed;
-    right: 14px;
-    top: 303px;
-}
-
-.prev {
-    position: fixed;
-    left: 14px;
-    top: 303px;
-}
-
 
 /* End of carousel */
 
