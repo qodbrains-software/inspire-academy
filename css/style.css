@@ -209,19 +209,20 @@ nav .hamburger-button::after {
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
+    justify-content: center;
 }
 
 .book {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: end;
     width: 50%;
-    /* border: yellow; */
 }
 
 .book img {
-    height: 100%;
+    margin-bottom: 20px;
+    height: 75%;
 }
 
 blockquote {
