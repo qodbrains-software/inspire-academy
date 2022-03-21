@@ -2,11 +2,12 @@ body {
     background-color: #E9E7E5;
 }
 
+
 .background-color__main {
     position: relative;
     background: #E9E7E5;
     width: 100%;
-    border-radius: 0 300px 0 0;
+    border-radius: 340px 0 0 0;
     height: 100vh;
     top: 60px;
 }
@@ -14,18 +15,19 @@ body {
 .background-color__main::after {
     position: absolute;
     content: '';
-    background-image: url(../images/school.jpg);
-    background-size: auto 310px;
-    background-position: right -290px top 1470px;
+    background-image: url(../images/teacher.jpg);
+    background-size: 610px auto;
+    background-position: left -220px top 1141px;
     background-clip: border-box;
     background-repeat: repeat;
     width: 100%;
     height: 100vh;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: -1;
     
 }
+
 
 .logo {
     padding-top: 4rem;
@@ -33,12 +35,13 @@ body {
     text-align: center;
 }
 
-.century-header {
-    padding-bottom: 3rem;
+
+.tutoring-header {
+    padding-bottom: 6rem;
     text-align: center;
 }
 
-.century-header h1 {
+.tutoring-header h1 {
     width: 100%;
     margin: auto;
     padding: 14px 32px;
@@ -48,44 +51,52 @@ body {
     color: #EEEEEE;
 }
 
-.century-header p {
-    padding-top: 2rem;
+.tutoring-header p {
+    padding-top: 4rem;
 }
 
-/* MEDIA QUERIES DESKTOP VIEW FOR 22CENTURY PAGE */
-@media(min-width: 40rem) {
+/* MEDIA QUERIES DESKTOP VIEW FOR TUTORING PAGE */
+
+ @media(min-width: 40rem) {
     .background-color__main {
         position: relative;
         background: #E9E7E5;
         width: 100%;
-        border-radius: 0 560px 0 0;
+        border-radius: 560px 0 0 0;
         height: 100vh;
         top: 60px;
     }
     
-    .background-color__main::after {
-        position: absolute;
-        content: '';
-        background-image: url(../images/school.jpg);
-        background-size: 1000px 700px;
-        background-position: right -580px top 1200px;
-        background-clip: border-box;
-        background-repeat: repeat;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        
+.background-color__main::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/teacher.jpg);
+    background-size: 1000px auto;
+    background-position: left -360px top 1200px;
+    background-clip: border-box;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    
+}
+    
+    
+    .logo {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        text-align: center;
     }
-
-
-    .century-header {
+    
+    
+    .tutoring-header {
         padding-bottom: 6rem;
         text-align: center;
     }
-
-    .century-header h1 {
+    
+    .tutoring-header h1 {
         width: 60%;
         margin: auto;
         padding: 14px 32px;
@@ -94,10 +105,8 @@ body {
         background-color: #F1592C;
         color: #EEEEEE;
     }
-
-    .century-header p {
-        padding-top: 4rem;
-    }
     
-
+    .tutoring-header p {
+        padding-top: 4rem;
+    } 
 }
