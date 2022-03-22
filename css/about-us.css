@@ -19,10 +19,17 @@
 .about-us h1 {
     text-align: center;
     background-color: #F1592C;
+    color: white;
     padding: 5px 20px;
     border-radius: 5px;
 }
 
 .about-us .content-us {
     padding: 30px;
+}
+
+@media (max-width: 400px) {
+    .about-us {
+        width: 100%;
+    }
 }
