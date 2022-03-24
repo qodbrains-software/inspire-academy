@@ -29,6 +29,22 @@ a {
     z-index: 201;
 }
 
+.sub-btn {
+    display: none;
+}
+
+/* SUBSCRIBE BUTTON STYLE */
+.sub-btn__black {
+    background-color: black;
+    color: #F7F7F7;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .4rem 1rem;
+    cursor: pointer;
+    right: 20px;
+    font-variant: small-caps;
+}
+
 
 .mobile-navigation {
     display: none;
@@ -143,6 +159,26 @@ nav .hamburger-button::after {
 /* NAVIGATION MEDIA QUERIES */
 /* desktop view */
 @media(min-width: 51rem) {
+
+    .sub-btn {
+        color: #EEEEEE;
+        display: inline-block;
+        position: fixed;
+        font-variant: small-caps;
+        background-color: #F1592C;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: .4rem 1rem;
+        cursor: pointer;
+        right: 20px;
+    }
+
+    .sub-btn:hover {
+        color: #F1592C;
+        background-color: #F7F7F7;
+    }
+
+
     .navigation-container {
         width: 80%;
         margin: auto;
