@@ -3,6 +3,111 @@
     margin: auto;
 }
 
+/* SUCCESSFULL SUBSCRIBED MODAL STYLE STARTS!!!!!!!!!!!!!!!!!!!!!!! */
+
+.successfull-modal_grid__container {
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    display: none;
+    top: 0;
+    z-index: 400;
+}
+
+.successfull-modal__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr 3fr);
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    display: none;
+    height: 200px;
+    width: 350px;
+}
+
+.successfull-modal__grid img {
+    height: 60px;
+    width: auto;
+}
+
+.successfull-modal__grid :nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+
+.successfull-modal__grid :nth-child(2) {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+    align-self: center;
+}
+
+
+.successfull-modal__grid i {
+    color: rgb(103, 190, 45);
+    font-size: 4rem;
+    font-weight: light;
+}
+
+.successfull-modal__grid .para {
+    padding-bottom: .8rem;
+    color: rgb(103, 190, 45);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.successfull-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: .5rem 1.4rem;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(103, 190, 45);
+}
+
+.successfull-btn:hover {
+    background-color: #231F20;
+}
+
+
+/* SUCCESSFULL MODAL MEDIA FOR DESKTOP */
+@media(min-width: 40rem) {
+    .successfull-modal__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr 1fr 3fr);
+        grid-template-rows: repeat(2, 1fr);
+        border-radius: 5px;
+        background-color: #EEEEEE;
+        /* display: none; */
+        height: 300px;
+        width: 600px;
+    }
+
+    .successfull-modal__grid img {
+        height: 110px;
+        width: auto;
+    }
+
+    .successfull-modal__grid i {
+        color: rgb(103, 190, 45);
+        font-size: 8rem;
+        font-weight: light;
+    }
+
+
+
+}
+
+/* SUCCESSFULL SUBSCRIBED MODAL STYLE ENDS!!!!!!!!!!!!!!!!!!!!!!! */
+
+
 /* PAGES SUB-HEADING STYLE STARTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .first-sub_headers__grid {
@@ -26,7 +131,6 @@
     font-size: 1.3rem;
 }
 
-
 .second-sub_headers__grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -47,13 +151,13 @@
     font-size: 1.3rem;
 }
 
-
 .century-page p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
+
 /* PAGES SUB-HEADINGS MEDIA QUERIES DESKTOP VIEW */
+
 @media(min-width: 40rem) {
     .first-sub_headers__grid {
         display: grid;
@@ -61,14 +165,12 @@
         grid-template-rows: repeat(2, 1fr);
         padding-top: 2rem;
     }
-    
     .first-sub_headers__grid :nth-child(1) {
         grid-column: 1 / span 1;
         justify-self: center;
         align-self: center;
         color: #F1592C;
     }
-    
     .first-sub_headers__grid :nth-child(2) {
         justify-self: center;
         grid-row: 2 / span 1;
@@ -76,25 +178,21 @@
         font-weight: lighter;
         font-size: 1.5rem;
     }
-    
     .first-sub_headers__grid :nth-child(3) {
         grid-column: 2 / span 2;
         grid-row: 1 / span 2;
     }
-
     .second-sub_headers__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         padding-top: 4rem;
     }
-    
     .second-sub_headers__grid :nth-child(1) {
         grid-column: 3 / span 1;
         justify-self: center;
         color: #F1592C;
     }
-    
     .second-sub_headers__grid :nth-child(2) {
         justify-self: center;
         grid-column: 3;
@@ -109,7 +207,9 @@
     }
 }
 
+
 /* PAGES SUB-HEADINGS ENDS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 
 /* REVIEWS AND COMMENTS STARTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -146,11 +246,13 @@
 .reviewer-grid__container :nth-child(1) {
     justify-self: center;
 }
+
 .reviewer-grid__container :nth-child(2) {
     align-self: center;
     grid-column: 2 / span 1;
     grid-row: 1;
 }
+
 .reviewer-grid__container :nth-child(3) {
     grid-column: 2 / span 2;
     grid-row: 2;
@@ -160,12 +262,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .reviewer-name {
     padding-bottom: .8rem;
     font-family: 'Kanit', sans-serif;
 }
-
 
 .background1 {
     margin-top: 2rem;
@@ -174,13 +274,11 @@
     border-radius: 0 160px 0 0;
 }
 
-
 .background2 {
     margin-top: 2rem;
     background-color: #F7F7F7;
     padding: 1.5rem 0;
 }
-
 
 .background3 {
     margin-top: 2rem;
@@ -189,7 +287,9 @@
     border-radius: 0 0 0 160px;
 }
 
+
 /* REVIEWS AND COMMENT SECTION MEDIA QUERIES DESKTOP VIEW STARTS */
+
 @media(min-width: 40rem) {
     .reviews-comment__section {
         width: 60%;
@@ -197,7 +297,9 @@
     }
 }
 
+
 /* MEDIA FOR IPAD */
+
 @media(min-width: 50.625rem) and (max-width: 50.625rem) {
     .reviews-comment__section {
         width: 80%;
@@ -205,9 +307,11 @@
     }
 }
 
+
 /* REVIEW AND COMMENT SECTION ENDS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-/* FOOTER STYLE STARTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */ 
+
+/* FOOTER STYLE STARTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .my-footer {
     margin-top: 6rem;
@@ -226,25 +330,21 @@
     justify-self: center;
 }
 
-
 .footer-container :nth-child(2) {
     align-self: flex-end;
     justify-self: center;
 }
-
 
 .footer-container :nth-child(3) {
     align-self: flex-end;
     justify-self: center;
 }
 
-
 .footer-container :nth-child(4) {
     align-self: center;
     text-align: center;
     color: #EEEEEE;
 }
-
 
 .footer-container :nth-child(5) {
     align-self: center;
@@ -256,13 +356,13 @@
     text-align: center;
 }
 
-
 .footer-container h5 {
     padding: .8rem 0;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: #EEEEEE;
 }
+
 .footer-container h4 {
     padding: .8rem 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -319,7 +419,9 @@ form input {
     color: #f12e7f;
 }
 
+
 /* FOOTER MEDIA QUERIES DESKTOP VIEW STARTS!!!!!!!!!!! */
+
 @media(min-width: 40rem) {
     .footer-container {
         display: grid;
@@ -327,20 +429,17 @@ form input {
         grid-template-rows: repeat(2, 1fr);
         gap: 1rem;
     }
-
     .footer-container :nth-child(2) {
         align-self: flex-end;
         justify-self: center;
         grid-column: 2 / span 2;
     }
-
     .footer-container :nth-child(4) {
         grid-row: 2;
         align-self: center;
         text-align: start;
         color: #EEEEEE;
     }
-
     .footer-container :nth-child(5) {
         grid-column: 2 / span 2;
         grid-row: 2;
@@ -348,35 +447,29 @@ form input {
         justify-self: center;
         color: #EEEEEE;
     }
-
     .footer-container h5 {
         padding: .8rem 0;
         border-bottom: none;
         text-align: center;
         color: #EEEEEE;
     }
-
     .footer-container i {
         padding: 0 .4rem;
     }
-
 }
 
+
 /* MEDIA QUERIES IPAD VIEW */
+
 @media(min-width: 50.625rem) and (max-width: 50.625rem) {
     .footer-container :nth-child(3) {
         align-self: flex-end;
         justify-self: start;
     }
-
     .footer-container i {
         padding: 0;
     }
-
-
-
 }
+
+
 /* FOOTER STYLE ENDS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-
-
