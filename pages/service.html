@@ -7,6 +7,9 @@
     <meta name="description" content="Inspire Academy offers few, but very effective services that will guarantee high success rates
      for students.">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/services.css">
     <title>Services | Inspire Academy</title>
 </head>
 <body>
@@ -91,76 +94,82 @@
             </nav>
     </div>
     <main>
-    <div>
-        <img src="../images/ia-logo-orange-full.png.png" alt="Inspire Academy Logo Orange" height="50" width="auto">
-    </div>
-    <section>
-        <div>
-            <div>
+        <div class="logo"><img src="../images/ia-logo-orange-full.png.png" height="150"></div>
+    <section class="align-pages services-page">
+        <div class="services-margi">
+            <div class="services-header">
                 <h1>SERVICES</h1>
                 <p>Inspire Academy offers few, but <b>effective</b> services that will guarantee high success rates for
                     students.
                 </p>
             </div>
-            <div>
+            <div class="services-grid__container">
                 <article>
-                    <h3>Tutoring</h3>
-                    <p>Intensive tutoring for Grades: 10, 11 and 12</p>
-                    <p>Intensive tutoring for re-writing students</p>
-                    <p>Intensive tutoring for ABET students</p>
+                    <h3 class="bg-orange">Tutoring</h3>
+                    <div class="child-grid">
+                        <p>Intensive tutoring for Grades: 10, 11 and 12</p>
+                        <p>Intensive tutoring for re-writing students</p>
+                        <p>Intensive tutoring for ABET students</p>
+                    </div>
                 </article>
                 <article>
-                    <h3>Inspiration</h3>
-                    <p>Goals and goal setting</p>
-                    <p>Personal Growth</p>
-                    <p>Fear of Failure</p>
-                    <p>Building a good character</p>
+                    <h3 class="bg-black">Inspiration</h3>
+                    <div class="child-grid">
+                        <p>Goals and goal setting</p>
+                        <p>Personal Growth</p>
+                        <p>Fear of Failure</p>
+                        <p>Building a good character</p>
+                    </div>
                 </article>
             </div>
         </div>
         <!-- Line break -->
         <div>
-            <article>
-                <i class="ri-plug-fill ri-2x"></i>
+            <article class="first-sub_headers__grid">
+                <i class="ri-plug-fill ri-4x"></i>
                 <h3>Coaching</h3>
-                <p>Full transformation coaching programme.</p>
-                <p>Full transformation coaching programme (for more severe cases) 16 hours</p>
+                <p>Full transformation coaching programme and Full transformation coaching programme (for more severe cases) 16 hours.</p>
             </article>
-            <article>
-                <i class="ri-archive-fill"></i>
+            <article class="second-sub_headers__grid">
+                <i class="ri-archive-fill ri-4x"></i>
                 <h3>Career Guidance</h3>
-                <p>Career guidance questionnaire with 2-hour session to follow-up</p>
-                <p>Career guidance with coaching programs for 10 hours</p>
+                <p>Career guidance questionnaire with 2-hour session to follow-up And Career guidance with coaching programs for 10 hours.</p>
             </article>
         </div>
     </section>
     </main>
-    <footer>
-        <div>
-            <div>
-                <h5>Subscribe to Inspire Academy via Email</h5>
-                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, perferendis.</small>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="button" placeholder="Subscribe" value="subscibe">
-                <small>© Inspire Academy</small>
-            </form>
-            </div>
-                <div>
-                    <small>Payement Methods</small>
-                    <img src="../images/kindpng_1104447.png" height="50" width="auto" alt="Peach Payments logo">
-                    <img src="../images/Payfast-Logo-White.png" height="50" width="auto" alt="Payfast logo">
+    <footer class="my-footer">
+        <div class="footer-container align-pages">
+             <div>
+                <h4>Subscribe to Inspire via Email </h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, perferendis.</p>
+                <form>
+                <input class="name-email" type="text" placeholder="name">
+                <input class="name-email" type="email" placeholder="Email Address">
+                <input class="subscribe-btn" type="button" placeholder="subscribe" value="SUBSCRIBE">
+                </form>
+             </div>
+                <div class="payfast-center">
+                    <h5>Payement Methods</h5>
+                    <img src="../images/kindpng_1104447.png" height="50px">
+                    <img src="../images/Payfast-Logo-White.png" height="50px">
                 </div>
                 <div>
-                    <small>Social Media</small>
-                    <i class="ri-facebook-fill"></i>
-                    <i class="ri-instagram-line"></i>
-                    <i class="ri-twitter-fill"></i>
-                    <i class="ri-phone-fill"></i>
-                    <i class="ri-mail-send-fill"></i>
+                    <h5>Social Media</h5>
+                    <a href=""><i class="ri-facebook-fill facebook ri-2x"></i></a> 
+                    <a href=""><i class="ri-instagram-line insta ri-2x"></i></a> 
+                    <a href=""><i class="ri-twitter-fill twitter ri-2x"></i></a> 
+                    <a href=""><i class="ri-phone-fill phone ri-2x"></i></a>
+                    <a href=""><i class="ri-mail-send-fill email ri-2x"></i></a>
+              </div>
+              <div>
+                <p>© Inspire Academy 2022. All Rights Reserved.</p>
+              </div>
+              <div>
+                  <p>Developed By <a class="qodbrains" href="https://qodbrains.com" target="_blank">qodbrains</a></p>
               </div>
         </div>
     </footer>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
