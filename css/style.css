@@ -252,11 +252,11 @@ nav .hamburger-button::after {
     justify-content: center;
     align-items: end;
     width: 50%;
+    flex-wrap: wrap;
 }
 
-.book img {
-    margin-bottom: 20px;
-    height: 75%;
+.book .book-buy {
+    height: 95%;
 }
 
 blockquote {
@@ -277,21 +277,23 @@ blockquote {
 
 .btn-read {
     color: whitesmoke;
-    text-decoration: none;
     background: #0076FF;
-    margin-right: 15px;
-    padding: 10px 4px 8px 5px;
-    font-size: 12px;
-    border-radius: 5px;
+    padding: 10px 12px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bolder;
+    margin-right: 5px;
 }
 
 .btn-buy {
-    text-decoration: none;
     background: #FF9F00;
     color: black;
-    padding: 10px 4px 8px 5px;
-    font-size: 12px;
-    border-radius: 5px;
+    padding: 10px 12px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bolder;
 }
 
 .intro-btns {
@@ -363,19 +365,17 @@ blockquote {
     color: #ffffff;
     height: 100vh;
     width: 100vw;
-    /* display: none; */
 }
 
 .century22 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 90%;
 }
 
 .century22 .bold {
-    font-size: 6em;
-    font-weight: bolder;
+    font-size: 5.5em;
+    font-weight: bold;
 }
 
 .century22 .better {
@@ -403,7 +403,7 @@ blockquote {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     height: 90%;
     width: 50%;
 }
