@@ -1,3 +1,7 @@
+body {
+    background-color: #E9E7E5;
+}
+
 .main-about-us {
     display: flex;
     flex-direction: column;
@@ -7,7 +11,6 @@
 
 .main-about-us img {
     height: 150px;
-    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -16,7 +19,9 @@
     background-color: #F1592C;
     color: white;
     padding: 14px 32px;
-    width: 40%;
+    font-size: 0.7em;
+    font-weight: bold;
+    width: 45%;
     display: inline-block;
     border-radius: 10px;
     margin-bottom: 3rem;
