@@ -232,7 +232,7 @@ nav .hamburger-button::after {
 
 .section-container {
     display: flex;
-    background: url(/images/landing\ back.jpg);
+    background: url(../images/landing\ back.jpg);
     background-size: cover;
     color: #ffffff;
     height: 100vh;
@@ -360,7 +360,7 @@ blockquote {
 
 .section-container_22century {
     display: flex;
-    background: url(/images/baim-hanif-pYWuOMhtc6k-unsplash.jpg);
+    background: url(../images/baim-hanif-pYWuOMhtc6k-unsplash.jpg);
     background-size: cover;
     color: #ffffff;
     height: 100vh;
@@ -392,7 +392,7 @@ blockquote {
 
 .section-container_tutoring {
     display: flex;
-    background: url(/images/tutoring.jpg);
+    background: url(../images/tutoring.jpg);
     background-size: cover;
     color: #ffffff;
     height: 100vh;
@@ -528,3 +528,10 @@ blockquote {
 
 
 /* End of media queries */
+
+
+
+
+* { 
+    font-family: 'Poppins', sans-serif;
+}
