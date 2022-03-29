@@ -3,8 +3,14 @@
 const hamburgerButton = document.querySelector('.hamburger-container');
 const mobileNavigation = document.querySelector('.mobile-navigation');
 const backDrop = document.querySelector('.back-drop');
+const subscribeButton = document.querySelector('.sub-btn');
+const subscribeOpen = document.querySelector('.subscribe-modal__enclosure');
+const modalDrop = document.querySelector('.successfull-modal_grid__container');
+const closeButton = document.querySelector('.icon-close');
+const subscribeIpad = document.querySelector('.sub-btn__black');
 
 let navigationOpen = false;
+let modalOpen = false;
 
 hamburgerButton.addEventListener('click', function() {
     if (!navigationOpen) {
@@ -20,18 +26,54 @@ hamburgerButton.addEventListener('click', function() {
     }
 });
 
-backDrop.addEventListener('click', function() {
-        if (!navigationOpen) {
-            navigationOpen = true;
-        } else {
-            mobileNavigation.style.display = 'none';
-            backDrop.style.display = 'none';
-            navigationOpen = false;
-        }
-    })
-    // MOBILE/ HAMBURGER NAVIGATION SCRIPT ENDS!!
+closeButton.addEventListener('click', function() {
+    if (!modalOpen) {
+        modalOpen = true;
+    } else {
+        subscribeOpen.style.display = 'none';
+        modalDrop.style.display = 'none';
+        modalOpen = false;
+    }
+})
 
-// // CAROUSEL
+subscribeIpad.addEventListener('click', function() {
+    if (!modalOpen) {
+        subscribeOpen.style.display = 'inline-block';
+        modalDrop.style.display = 'block';
+        modalOpen = true;
+
+    } else {
+        modalOpen = false;
+
+    }
+});
+
+subscribeButton.addEventListener('click', function() {
+    if (!modalOpen) {
+        subscribeOpen.style.display = 'inline-block';
+        modalDrop.style.display = 'block';
+        modalOpen = true;
+
+    } else {
+        modalOpen = false;
+
+    }
+});
+
+
+backDrop.addEventListener('click', function() {
+    if (!navigationOpen) {
+        navigationOpen = true;
+    } else {
+        mobileNavigation.style.display = 'none';
+        backDrop.style.display = 'none';
+        navigationOpen = false;
+    }
+})
+
+
+// MOBILE/ HAMBURGER NAVIGATION SCRIPT ENDS!!
+// CAROUSEL
 
 const track = document.querySelector(".main-container");
 const slides = Array.from(track.children);
@@ -99,29 +141,28 @@ let slider = () => {
         if (index === 3) {
             index = 0;
         }
-
     }, 4000)
 }
 slider()
 
 // End of carousel
 
+
 // Payment modal
 
 
 const hide = document.querySelector(".main-method");
 const btn_payment = document.querySelector(".buybook");
-const btn_inspire = document.querySelector(".btn-buybook")
+const btn_inspire = document.querySelector(".btn-buybook");
 const close_btn = document.querySelector(".icon");
 
 function payment() {
-    hide.style.display = "flex"
+    hide.style.display = "flex";
 }
 
 function close() {
-    hide.style.display = "none"
+    hide.style.display = "none";
 }
 
 close_btn.addEventListener("click", close);
-btn_payment.addEventListener("click", payment)
-    // btn_inspire.addEventListener("click", payment);
+btn_payment.addEventListener("click", payment);
