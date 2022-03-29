@@ -6,7 +6,7 @@ const backDrop = document.querySelector('.back-drop');
 const subscribeButton = document.querySelector('.sub-btn');
 const subscribeOpen = document.querySelector('.subscribe-modal__enclosure');
 const modalDrop = document.querySelector('.successfull-modal_grid__container');
-const closeButton = document.querySelector('.icon-close');
+// const closeButton = document.querySelector('.icon-close');
 const subscribeIpad = document.querySelector('.sub-btn__black');
 
 let navigationOpen = false;
@@ -26,15 +26,15 @@ hamburgerButton.addEventListener('click', function() {
     }
 });
 
-closeButton.addEventListener('click', function() {
-    if (!modalOpen) {
-        modalOpen = true;
-    } else {
-        subscribeOpen.style.display = 'none';
-        modalDrop.style.display = 'none';
-        modalOpen = false;
-    }
-})
+// closeButton.addEventListener('click', function() {
+//     if (!modalOpen) {
+//         modalOpen = true;
+//     } else {
+//         subscribeOpen.style.display = 'none';
+//         modalDrop.style.display = 'none';
+//         modalOpen = false;
+//     }
+// })
 
 subscribeIpad.addEventListener('click', function() {
     if (!modalOpen) {
