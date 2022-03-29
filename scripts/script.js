@@ -6,7 +6,7 @@ const backDrop = document.querySelector('.back-drop');
 const subscribeButton = document.querySelector('.sub-btn');
 const subscribeOpen = document.querySelector('.subscribe-modal__enclosure');
 const modalDrop = document.querySelector('.successfull-modal_grid__container');
-// const closeButton = document.querySelector('.icon-close');
+const closeButton = document.querySelector('.icon-close');
 const subscribeIpad = document.querySelector('.sub-btn__black');
 
 let navigationOpen = false;
@@ -26,15 +26,16 @@ hamburgerButton.addEventListener('click', function() {
     }
 });
 
-// closeButton.addEventListener('click', function() {
-//     if (!modalOpen) {
-//         modalOpen = true;
-//     } else {
-//         subscribeOpen.style.display = 'none';
-//         modalDrop.style.display = 'none';
-//         modalOpen = false;
-//     }
-// })
+
+closeButton.addEventListener('click', function() {
+    if (!modalOpen) {
+        modalOpen = true;
+    } else {
+        subscribeOpen.style.display = 'none';
+        modalDrop.style.display = 'none';
+        modalOpen = false;
+    }
+})
 
 subscribeIpad.addEventListener('click', function() {
     if (!modalOpen) {
@@ -60,20 +61,20 @@ subscribeButton.addEventListener('click', function() {
     }
 });
 
+    backDrop.addEventListener('click', function() {
+        if (!navigationOpen) {
+            navigationOpen = true;
+        } else {
+            mobileNavigation.style.display = 'none';
+            backDrop.style.display = 'none';
+            navigationOpen = false;
+        }
+    })
 
-backDrop.addEventListener('click', function() {
-    if (!navigationOpen) {
-        navigationOpen = true;
-    } else {
-        mobileNavigation.style.display = 'none';
-        backDrop.style.display = 'none';
-        navigationOpen = false;
-    }
-})
 
+    // MOBILE/ HAMBURGER NAVIGATION SCRIPT ENDS!!
+  // CAROUSEL
 
-// MOBILE/ HAMBURGER NAVIGATION SCRIPT ENDS!!
-// CAROUSEL
 
 const track = document.querySelector(".main-container");
 const slides = Array.from(track.children);
