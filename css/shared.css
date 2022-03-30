@@ -137,6 +137,7 @@
 
 /* SUCCESSFULL SUBSCRIBED MODAL STYLE ENDS!!!!!!!!!!!!!!!!!!!!!!! */
 
+
 .subscribe-modal__grid .icon-close {
   grid-column: 3;
   grid-row: 1;
@@ -180,7 +181,6 @@
   border: none;
 
 }
-
 
 
 /* SUCCESSFULLY AND SUBSCRIBE MODAL MEDIA FOR DESKTOP */
@@ -850,4 +850,3 @@ form input {
 
 
 /* End of payment method */
-

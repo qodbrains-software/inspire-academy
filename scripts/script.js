@@ -26,6 +26,7 @@ hamburgerButton.addEventListener('click', function() {
     }
 });
 
+
 closeButton.addEventListener('click', function() {
     if (!modalOpen) {
         modalOpen = true;
@@ -60,7 +61,6 @@ subscribeButton.addEventListener('click', function() {
     }
 });
 
-
     backDrop.addEventListener('click', function() {
         if (!navigationOpen) {
             navigationOpen = true;
@@ -74,6 +74,7 @@ subscribeButton.addEventListener('click', function() {
 
     // MOBILE/ HAMBURGER NAVIGATION SCRIPT ENDS!!
   // CAROUSEL
+
 
 const track = document.querySelector(".main-container");
 const slides = Array.from(track.children);
@@ -141,7 +142,6 @@ let slider = () => {
         if (index === 3) {
             index = 0;
         }
-
     }, 4000)
 }
 slider()
@@ -153,6 +153,7 @@ slider()
 
 const hide = document.querySelector(".main-method");
 const btn_payment = document.querySelector(".buybook");
+
 const btn_inspire = document.querySelector(".btn-buybook")
 const close_btn = document.querySelector(".icon");
 
