@@ -71,7 +71,6 @@
     display: flex;
     padding: 2px;
     text-align: center;
-    /* width: 250px; */
     align-items: center;
     font-size: 12px;
     justify-content: center;
@@ -84,6 +83,7 @@
     margin-right: 5px;
     border-radius: 2px;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .buttons-inspire .btn-download {
@@ -93,6 +93,7 @@
     text-align: center;
     padding: 8px 10px;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .grid {

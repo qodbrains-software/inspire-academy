@@ -147,3 +147,23 @@ let slider = () => {
 slider()
 
 // End of carousel
+
+// Payment modal
+
+
+const hide = document.querySelector(".main-method");
+const btn_payment = document.querySelector(".buybook");
+const btn_inspire = document.querySelector(".btn-buybook")
+const close_btn = document.querySelector(".icon");
+
+function payment() {
+    hide.style.display = "flex"
+}
+
+function close() {
+    hide.style.display = "none"
+}
+
+close_btn.addEventListener("click", close);
+btn_payment.addEventListener("click", payment)
+    // btn_inspire.addEventListener("click", payment);
