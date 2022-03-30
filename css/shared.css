@@ -690,7 +690,7 @@ form input {
     width: 100%;
     height: 100vh;
     display: none;
-    background-color: rgba(10, 10, 10, 0);
+    /* background-color: rgba(0, 0, 0, 0.7); */
     backdrop-filter: inherit;
     justify-content: center;
     align-items: center;
@@ -699,7 +699,7 @@ form input {
 
 .method {
     top: 300px;
-    left: 25%;
+    /* left: 25%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -774,8 +774,7 @@ form input {
     background: #231F20;
     padding: 5px 15px;
     margin: 10px;
-    /* font-size: x-small;
-    font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
     margin-top: 25px;
 }
@@ -784,8 +783,7 @@ form input {
     background: #F1592C;
     padding: 5px 15px;
     margin: 10px;
-    /* font-size: x-small;
-    font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
     align-self: center;
     margin-top: 30px;
