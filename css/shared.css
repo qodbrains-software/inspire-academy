@@ -6,6 +6,7 @@
 
 /* SUCCESSFULLY AND SUBSCRIBE MODAL STYLE STARTS!!!!!!!!!!!!!!!!!!!!!!! */
 
+
 .successfull-modal_grid__container {
   position: fixed;
   display: grid;
@@ -109,6 +110,32 @@
   font-size: .8rem;
 }
 
+/* SUCCESSFULL MODAL MEDIA FOR DESKTOP */
+
+@media(min-width: 40rem) {
+    .successfull-modal__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr 1fr 3fr);
+        grid-template-rows: repeat(2, 1fr);
+        border-radius: 5px;
+        background-color: #EEEEEE;
+        /* display: none; */
+        height: 300px;
+        width: 600px;
+    }
+    .successfull-modal__grid img {
+        height: 110px;
+        width: auto;
+    }
+    .successfull-modal__grid i {
+        color: rgb(103, 190, 45);
+        font-size: 8rem;
+        font-weight: light;
+    }
+}
+
+
+/* SUCCESSFULL SUBSCRIBED MODAL STYLE ENDS!!!!!!!!!!!!!!!!!!!!!!! */
 
 
 .subscribe-modal__grid .icon-close {
@@ -690,6 +717,7 @@ form input {
   }
 }
 
+
 /* FOOTER STYLE ENDS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
@@ -702,6 +730,7 @@ form input {
     display: none;
     background-color: rgba(10, 10, 10, 0);
     backdrop-filter: inherit;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     z-index: 450;
@@ -821,6 +850,3 @@ form input {
 
 
 /* End of payment method */
-
-
-
