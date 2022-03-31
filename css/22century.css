@@ -1,5 +1,6 @@
 body {
     background-color: #E9E7E5;
+    padding-top: 4.5rem;
 }
 
 .background-color__main {
@@ -8,7 +9,6 @@ body {
     width: 100%;
     border-radius: 0 300px 0 0;
     height: 100vh;
-    top: 60px;
 }
 
 .background-color__main::after {
@@ -24,7 +24,6 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    
 }
 
 .logo {
@@ -46,13 +45,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F1592C;
     color: #EEEEEE;
+    font-size: 1.5em;
 }
 
 .century-header p {
     padding-top: 2rem;
 }
 
+
 /* MEDIA QUERIES DESKTOP VIEW FOR 22CENTURY PAGE */
+
 @media(min-width: 40rem) {
     .background-color__main {
         position: relative;
@@ -60,9 +62,7 @@ body {
         width: 100%;
         border-radius: 0 560px 0 0;
         height: 100vh;
-        top: 60px;
     }
-    
     .background-color__main::after {
         position: absolute;
         content: '';
@@ -76,15 +76,11 @@ body {
         top: 0;
         left: 0;
         z-index: -1;
-        
     }
-
-
     .century-header {
         padding-bottom: 6rem;
         text-align: center;
     }
-
     .century-header h1 {
         width: 60%;
         margin: auto;
@@ -94,10 +90,7 @@ body {
         background-color: #F1592C;
         color: #EEEEEE;
     }
-
     .century-header p {
         padding-top: 4rem;
     }
-    
-
 }

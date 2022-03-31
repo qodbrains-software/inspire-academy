@@ -1,4 +1,6 @@
-/* inspire books */
+body {
+    background-color: #E9E7E5;
+}
 
 .review-stars i {
     color: #F1592C;
@@ -14,15 +16,16 @@
 
 .aboutbook .logo-inspire {
     height: 300px;
-    margin-top: 50px;
+    padding-top: 4.5rem;
 }
 
 .logo-img {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
 .aboutbook {
-    margin-top: 50px;
     margin-bottom: 6rem;
 }
 
@@ -52,6 +55,7 @@
 
 .reviews h1 {
     font-size: 3.5em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .reviews h5 {

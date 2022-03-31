@@ -1,12 +1,19 @@
 body {
     background-color: #E9E7E5;
+    padding-top: 4.5rem;
+}
+
+.logo {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
 }
 
 .main-about-us {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 7.75rem;
+    /* margin-top: 7.75rem; */
 }
 
 .main-about-us img {
@@ -30,7 +37,6 @@ body {
 
 .content-us {
     padding: 30px 0px;
-    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

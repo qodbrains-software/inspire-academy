@@ -1,7 +1,7 @@
 body {
     background-color: #E9E7E5;
+    padding-top: 4.5rem;
 }
-
 
 .background-color__main {
     position: relative;
@@ -9,7 +9,6 @@ body {
     width: 100%;
     border-radius: 340px 0 0 0;
     height: 100vh;
-    top: 60px;
 }
 
 .background-color__main::after {
@@ -25,16 +24,13 @@ body {
     top: 0;
     right: 0;
     z-index: -1;
-    
 }
-
 
 .logo {
     padding-top: 4rem;
     padding-bottom: 2rem;
     text-align: center;
 }
-
 
 .tutoring-header {
     padding-bottom: 6rem;
@@ -55,47 +51,40 @@ body {
     padding-top: 4rem;
 }
 
+
 /* MEDIA QUERIES DESKTOP VIEW FOR TUTORING PAGE */
 
- @media(min-width: 40rem) {
+@media(min-width: 40rem) {
     .background-color__main {
         position: relative;
         background: #E9E7E5;
         width: 100%;
         border-radius: 560px 0 0 0;
         height: 100vh;
-        top: 60px;
     }
-    
-.background-color__main::after {
-    position: absolute;
-    content: '';
-    background-image: url(../images/teacher.jpg);
-    background-size: 1000px auto;
-    background-position: left -360px top 1200px;
-    background-clip: border-box;
-    background-repeat: repeat;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    
-}
-    
-    
+    .background-color__main::after {
+        position: absolute;
+        content: '';
+        background-image: url(../images/teacher.jpg);
+        background-size: 1000px auto;
+        background-position: left -360px top 1200px;
+        background-clip: border-box;
+        background-repeat: repeat;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
     .logo {
         padding-top: 4rem;
         padding-bottom: 2rem;
         text-align: center;
     }
-    
-    
     .tutoring-header {
         padding-bottom: 6rem;
         text-align: center;
     }
-    
     .tutoring-header h1 {
         width: 60%;
         margin: auto;
@@ -105,8 +94,7 @@ body {
         background-color: #F1592C;
         color: #EEEEEE;
     }
-    
     .tutoring-header p {
         padding-top: 4rem;
-    } 
+    }
 }
