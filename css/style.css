@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     box-sizing: border-box;
 }
 
@@ -59,6 +59,7 @@ a {
     position: fixed;
     margin-top: 4.5rem;
     right: 0;
+    top: 0;
     background-color: #F1592C;
     border-radius: 0 0 0 80px;
     width: 90%;

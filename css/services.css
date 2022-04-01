@@ -1,21 +1,18 @@
 body {
     background-color: #E9E7E5;
+    padding-top: 4.5rem;
 }
 
-
 .logo {
-    padding-top: 7.75rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
     text-align: center;
 }
-
-
 
 .services-header {
     padding-bottom: 6rem;
     text-align: center;
 }
-
 
 .services-header h1 {
     width: 60%;
@@ -31,7 +28,6 @@ body {
     padding-top: 4rem;
 }
 
-
 .services-margi {
     margin-bottom: 6rem;
 }
@@ -46,7 +42,6 @@ body {
     justify-self: center;
     text-align: center;
 }
-
 
 .services-grid__container :nth-child(2) {
     grid-column: 3 / span 2;
@@ -65,12 +60,12 @@ body {
     border-radius: 15px;
 }
 
-
 .bg-black {
     background-color: #231F20;
     padding: .4rem 7rem;
     border-radius: 15px;
 }
+
 
 /* .child-grid {
     display: grid;
@@ -95,10 +90,3 @@ body {
     grid-row: 3;
 
 } */
-
-
-
-
-
-
-
