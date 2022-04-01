@@ -1,5 +1,6 @@
 body {
     background-color: #E9E7E5;
+    padding-top: 4.5rem;
 }
 
 .review-stars i {
@@ -16,12 +17,10 @@ body {
 
 .aboutbook .logo-inspire {
     height: 300px;
-    padding-top: 4.5rem;
 }
 
 .logo-img {
-    padding-top: 2.5rem;
-    padding-bottom: 2rem;
+    padding: 2.5rem 0 2rem 0;
     text-align: center;
 }
 
