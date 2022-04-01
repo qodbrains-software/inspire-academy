@@ -1,9 +1,14 @@
 body {
     background-color: #E9E7E5;
+    padding-top: 4.5rem;
 }
 
 .review-stars i {
     color: #F1592C;
+}
+
+.review-stars h1 {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #star-number {
@@ -16,12 +21,10 @@ body {
 
 .aboutbook .logo-inspire {
     height: 300px;
-    padding-top: 4.5rem;
 }
 
 .logo-img {
-    padding-top: 2.5rem;
-    padding-bottom: 2rem;
+    padding: 2.5rem 0 2rem 0;
     text-align: center;
 }
 
@@ -37,6 +40,7 @@ body {
     background-color: white;
     padding: 20px;
     width: 80%;
+    font-family: arial;
 }
 
 .book-description {
@@ -47,19 +51,22 @@ body {
 .book-description h4 {
     background-color: rgb(42, 41, 41);
     color: rgb(255, 255, 255);
-    width: 150px;
+    width: 180px;
     border-radius: 0 10px 0 0;
     text-align: center;
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .reviews h1 {
     font-size: 3.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #231F20;
 }
 
 .reviews h5 {
     font-size: 1em;
+    font-family: Arial, Helvetica;
 }
 
 .buttons {
@@ -84,7 +91,7 @@ body {
     color: black;
     padding: 8px 10px;
     background-color: #FF9F00;
-    margin-right: 5px;
+    margin-right: 20px;
     border-radius: 2px;
     font-weight: bolder;
     cursor: pointer;

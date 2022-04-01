@@ -434,10 +434,11 @@
 }
 
 .reviewer img {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     object-fit: cover;
+    margin: 0 1.8rem;
 }
 
 .reviews-comment__section i {
@@ -449,10 +450,12 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .reviewer-grid__container :nth-child(1) {
-    justify-self: center;
+    justify-self: end;
+    align-self: center;
 }
 
 .reviewer-grid__container :nth-child(2) {
@@ -480,12 +483,14 @@
     background-color: #f7f7f7;
     padding: 1.5rem 0;
     border-radius: 0 160px 0 0;
+    box-shadow: -1px 2px 5px 5px #CCC;
 }
 
 .background2 {
     margin-top: 2rem;
     background-color: #f7f7f7;
     padding: 1.5rem 0;
+    box-shadow: -1px 2px 5px 5px #CCC;
 }
 
 .background3 {
@@ -493,6 +498,7 @@
     background-color: #f7f7f7;
     padding: 1.5rem 0;
     border-radius: 0 0 0 160px;
+    box-shadow: -1px 2px 5px 5px #CCC;
 }
 
 
