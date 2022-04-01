@@ -116,7 +116,8 @@ a {
     text-decoration: none;
 }
 
-.navigation-container nav ul li a:hover {
+.navigation-container nav ul li a:hover,
+.navigation-container nav ul li a.current {
     color: #F1592C;
 }
 
