@@ -482,12 +482,14 @@
     background-color: #f7f7f7;
     padding: 1.5rem 0;
     border-radius: 0 160px 0 0;
+    box-shadow: -1px 2px 5px 5px #CCC;
 }
 
 .background2 {
     margin-top: 2rem;
     background-color: #f7f7f7;
     padding: 1.5rem 0;
+    box-shadow: -1px 2px 5px 5px #CCC;
 }
 
 .background3 {
@@ -495,6 +497,7 @@
     background-color: #f7f7f7;
     padding: 1.5rem 0;
     border-radius: 0 0 0 160px;
+    box-shadow: -1px 2px 5px 5px #CCC;
 }
 
 
