@@ -114,6 +114,7 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #EEEEEE;
     text-decoration: none;
+    transition: all 450ms ease-in;
 }
 
 .navigation-container nav ul li a:hover,
@@ -181,6 +182,7 @@ nav .hamburger-button::after {
         padding: .4rem 1rem;
         cursor: pointer;
         right: 20px;
+        transition: all 300ms ease-in;
     }
     .sub-btn:hover {
         color: #F1592C;
