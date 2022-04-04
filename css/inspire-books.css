@@ -107,6 +107,16 @@ body {
     cursor: pointer;
 }
 
+.buttons-inspire .btn-buybook:hover {
+    background-color: #ffdca4;
+    transition: 1s;
+}
+
+.buttons-inspire .btn-download:hover {
+    background-color: #00499c;
+    transition: all 1s ease-in;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
