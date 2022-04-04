@@ -160,12 +160,12 @@
     display: inline-block;
     background-color: rgb(172, 172, 172);
     color: rgb(219, 217, 217);
-    border: none;
+    border: 2px solid transparent;
     outline: none;
 }
 
 .input-container input:focus,
-.input-container input:focus {
+.input-container input:active {
     border: 2px solid #f1592c;
 }
 
@@ -295,7 +295,7 @@
         display: inline-block;
         background-color: rgb(172, 172, 172);
         color: rgb(219, 217, 217);
-        border: none;
+        border: 2px solid transparent;
         outline: none;
     }
     .input-container label {
