@@ -249,6 +249,7 @@ nav .hamburger-button::after {
     flex-direction: column;
     align-items: end;
     justify-content: center;
+    height: 100%;
 }
 
 .book {
@@ -372,12 +373,16 @@ blockquote {
     color: #ffffff;
     height: 100vh;
     width: 100vw;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .century22 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 50%;
+    height: 90%;
 }
 
 .century22 .bold {
@@ -402,6 +407,7 @@ blockquote {
     background: url(../images/tutoring.jpg);
     background-size: cover;
     color: #ffffff;
+    align-items: flex-end;
     height: 100vh;
     width: 100vw;
 }
@@ -410,13 +416,12 @@ blockquote {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
     height: 90%;
     width: 50%;
 }
 
 .tutoring .bold {
-    font-size: 6em;
+    font-size: 6.5em;
     font-weight: bolder;
 }
 
@@ -472,8 +477,13 @@ blockquote {
         flex-direction: column;
         align-items: center;
     }
+    .book .book-buy {
+        /* border: blue solid; */
+        height: 100%;
+    }
     .book {
-        height: 50%;
+        /* border: solid blue; */
+        height: 48%;
         display: flex;
         order: -1;
     }
@@ -490,10 +500,11 @@ blockquote {
     /* 22century */
     .century22 {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         flex-direction: column;
-        height: 40%;
         order: -1;
+        width: 100%;
+        align-items: center;
     }
     .century22 .bold {
         font-size: 2.8em;
@@ -502,17 +513,19 @@ blockquote {
     .century22 .better {
         font-size: 2.2em;
         display: flex;
-        align-self: flex-start;
+        justify-content: center;
+    }
+    .century22 .cover {
+        text-align: center;
     }
     /* End of 22century */
     /* tutoring */
     .tutoring {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         flex-direction: column;
         align-items: center;
-        height: 40%;
-        /* width: 50%; */
+        width: 100%;
         order: -1;
     }
     .max-container {
@@ -532,6 +545,42 @@ blockquote {
     }
     /* End of tutoring */
 }
+
+
+/* media query  for fonts*/
+
+@media (min-width: 1460px) {
+    .century22 .bold {
+        font-size: 6em;
+    }
+    .article-content {
+        font-size: 1em;
+    }
+    .tutoring {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 1940px) {
+    .century22 .bold {
+        font-size: 8em;
+    }
+    .article-content {
+        font-size: 1.9em;
+    }
+    .tutoring {
+        font-size: 2em;
+    }
+    .dotsContainer .dots {
+        padding: 10px;
+    }
+    .century22 .better {
+        font-size: 4em;
+    }
+}
+
+
+/* End of media query */
 
 
 /* End of media queries */
