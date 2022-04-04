@@ -290,6 +290,7 @@ blockquote {
     font-weight: bolder;
     margin-right: 5px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 .btn-buy {
@@ -301,16 +302,15 @@ blockquote {
     font-size: 11px;
     font-weight: bolder;
     cursor: pointer;
+    transition: 1s;
 }
 
 .btn-buy:hover {
     background-color: #ffdca4;
-    transition: 1s;
 }
 
 .btn-read:hover {
     background-color: #00499c;
-    transition: all .5s ease-in-out;
 }
 
 .intro-btns {
