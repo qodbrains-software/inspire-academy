@@ -96,6 +96,7 @@ body {
     border-radius: 2px;
     font-weight: bolder;
     cursor: pointer;
+    transition: 1s;
 }
 
 .buttons-inspire .btn-download {
@@ -106,6 +107,15 @@ body {
     padding: 8px 10px;
     font-weight: bolder;
     cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+.buttons-inspire .btn-buybook:hover {
+    background-color: #ffdca4;
+}
+
+.buttons-inspire .btn-download:hover {
+    background-color: #00499c;
 }
 
 .grid {
