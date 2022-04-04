@@ -538,21 +538,20 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    padding-top: 3rem;
     gap: 1rem;
 }
 
 .footer-container :nth-child(1) {
-    align-self: flex-end;
     justify-self: center;
+    text-align: center;
 }
 
 .footer-container :nth-child(2) {
-    align-self: flex-end;
     justify-self: center;
 }
 
 .footer-container :nth-child(3) {
-    align-self: flex-end;
     justify-self: center;
 }
 
@@ -586,28 +585,15 @@
 }
 
 .footer-container p {
-    color: #eeeeee;
     padding: 0.4rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
 }
 
 .qodbrains {
     color: #398bfd;
 }
 
-.subscribe-btn {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: #f1592c;
-    color: #eeeeee;
-    padding: 0.4rem 0.6rem;
-    border-radius: 5px;
-}
-
-.subscribe-btn:hover {
-    background-color: #eeeeee;
-    color: #f1592c;
-}
 
 form input {
     background-color: transparent;
@@ -645,32 +631,51 @@ form input {
         grid-template-rows: repeat(2, 1fr);
         gap: 1rem;
     }
-    .footer-container :nth-child(2) {
-        align-self: flex-end;
+
+
+    .footer-container .first {
+        justify-self: center;
+        text-align: start;
+    }
+
+    .footer-container .second {
         justify-self: center;
         grid-column: 2 / span 2;
     }
-    .footer-container :nth-child(4) {
+
+    .footer-container .third {
+        justify-self: center;
+        text-align: center;
+    }
+
+    .footer-container .fourth {
+        grid-column: 1 / span 2;
         grid-row: 2;
         align-self: center;
+        justify-self: start;
         text-align: start;
         color: #eeeeee;
     }
-    .footer-container :nth-child(5) {
+    .footer-container .fifth {
         grid-column: 2 / span 2;
         grid-row: 2;
         align-self: center;
         justify-self: center;
         color: #eeeeee;
     }
-    .footer-container h5 {
-        padding: 0.8rem 0;
-        border-bottom: none;
-        text-align: center;
-        color: #eeeeee;
+
+    .footer-container .sub-text {
+        text-align: start;
     }
+
+
     .footer-container i {
         padding: 0 0.4rem;
+    }
+
+    .footer-container p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: .9rem;
     }
 }
 
@@ -678,7 +683,7 @@ form input {
 /* MEDIA QUERIES IPAD VIEW */
 
 @media (min-width: 50.625rem) and (max-width: 50.625rem) {
-    .footer-container :nth-child(3) {
+    .footer-container .third {
         align-self: flex-end;
         justify-self: start;
     }

@@ -8,6 +8,7 @@ const subscribeOpen = document.querySelector('.subscribe-modal__enclosure');
 const modalDrop = document.querySelector('.successfull-modal_grid__container');
 const closeButton = document.querySelector('.icon-close');
 const subscribeIpad = document.querySelector('.sub-btn__black');
+const footerSub = document.querySelector('.sub-btn2');
 
 let navigationOpen = false;
 let modalOpen = false;
@@ -49,6 +50,18 @@ subscribeIpad.addEventListener('click', function() {
 });
 
 subscribeButton.addEventListener('click', function() {
+    if (!modalOpen) {
+        subscribeOpen.style.display = 'inline-block';
+        modalDrop.style.display = 'block';
+        modalOpen = true;
+
+    } else {
+        modalOpen = false;
+
+    }
+});
+
+footerSub.addEventListener('click', function() {
     if (!modalOpen) {
         subscribeOpen.style.display = 'inline-block';
         modalDrop.style.display = 'block';
