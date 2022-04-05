@@ -427,6 +427,7 @@ blockquote {
 .century22 {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 50%;
     height: 90%;
@@ -435,12 +436,15 @@ blockquote {
 .century22 .bold {
     font-size: 5.5em;
     font-weight: bold;
+    font-family: arial;
 }
 
 .century22 .better {
     font-size: 2em;
     display: flex;
     align-self: flex-start;
+    font-family: arial;
+    padding-left: 5px;
 }
 
 
@@ -469,12 +473,15 @@ blockquote {
 
 .tutoring .bold {
     font-size: 6.5em;
+    font-family: Arial;
     font-weight: bolder;
 }
 
 .tutoring .better {
-    font-size: 2.5em;
+    font-size: 2em;
     display: flex;
+    font-family: Arial;
+    padding-left: 23px;
 }
 
 
@@ -485,7 +492,6 @@ blockquote {
 
 .max-container {
     transition: .2s;
-    /* margin-top: 20px; */
     overflow: hidden;
 }
 
@@ -493,7 +499,6 @@ blockquote {
     display: flex;
     transition: .2s;
     align-items: center;
-    /* border: black solid; */
 }
 
 .main {
@@ -525,11 +530,10 @@ blockquote {
         align-items: center;
     }
     .book .book-buy {
-        /* border: blue solid; */
+        margin-top: 60px;
         height: 100%;
     }
     .book {
-        /* border: solid blue; */
         height: 48%;
         display: flex;
         order: -1;
