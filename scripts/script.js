@@ -9,7 +9,11 @@ const modalDrop = document.querySelector('.successfull-modal_grid__container');
 const closeButton = document.querySelector('.icon-close');
 const subscribeIpad = document.querySelector('.sub-btn__black');
 const footerSub = document.querySelector('.sub-btn2');
-
+const myButton = document.querySelector('.more-info__button');
+const moreModal = document.querySelector('.more-info__modal');
+const myContainer = document.querySelector('.more-info__container');
+const closeModal = document.querySelector('.more-info_icon__leaving');
+let openMore = false
 let navigationOpen = false;
 let modalOpen = false;
 
@@ -69,6 +73,31 @@ footerSub.addEventListener('click', function() {
 
     } else {
         modalOpen = false;
+
+    }
+});
+
+
+myButton.addEventListener('click', function() {
+    if(!openMore) {
+        myButton.classList.add('open');
+        myContainer.classList.add('vula');
+        moreModal.style.dispaly = 'flex';
+        openMore = true;
+    } else {
+        openMore = false;
+
+    }
+});
+
+
+closeModal.addEventListener('click', function() {
+    if(!openMore) {
+        openMore = true;
+    } else {
+        myButton.classList.remove('open');
+        myContainer.classList.remove('vula');
+        openMore = false;
 
     }
 });
