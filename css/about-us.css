@@ -38,6 +38,8 @@ body {
 .content-us {
     padding: 30px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 @media (max-width: 400px) {
