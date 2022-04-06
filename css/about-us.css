@@ -45,3 +45,12 @@ body {
         width: 90%;
     }
 }
+
+@media(max-width: 820px) {
+    .content-us {
+        padding: 30px 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
