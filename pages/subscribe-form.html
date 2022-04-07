@@ -14,59 +14,102 @@
         <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#f1592c">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="/css/mobile-sub.css">
+        <link rel="stylesheet" href="../css/style.css">
         <title>Inspire Academy | Subscribe to get the latest news and updates</title>
     </head>
     <body>
+    <div class="back-drop"></div>
         <header>
-            <a href="../index.html" title="Home">
-                <img src="../images/logo-light.png" height="60" alt="Inspire Academy logo white">
-            </a>
+            <div class="navigation-background__color">
+                <div class="navigation-container">
+                    <div class="navigation-logo">
+                        <a href="../index.html" title="Home">
+                            <img src="../images/logo-light.png" height="60" alt="Inspire Academy logo white">
+                        </a>
+                    </div>
+                    <nav>
+                        <div class="hamburger-container">
+                            <div class="hamburger-button">
+                                <div class="before-after"></div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="inspire-books.html">INSPIRE BOOKS</a></li>
+                            <li><a class="current" href="#">22nd CENTURY EDUCATION</a></li>
+                            <li><a href="tutoring.html">TUTORING</a></li>
+                            <li><a href="service.html">SERVICES</a></li>
+                            <li><a href="aboutus.html">ABOUT US</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sub-btn">
+                        <p>subscribe</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile-navigation">
             <nav>
                 <ul>
                     <li><a href="inspire-books.html">INSPIRE BOOKS</a></li>
-                    <li><a href="22century.html">22nd CENTURY</a></li>
+                    <li><a href="#">22nd CENTURY EDUCATION</a></li>
                     <li><a href="tutoring.html">TUTORING</a></li>
                     <li><a href="service.html">SERVICES</a></li>
                     <li><a href="aboutus.html">ABOUT US</a></li>
+                    <div class="sub-btn__black">
+                        <p><a href="subscribe-form.html">subscribe</a></p>
+                    </div>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <div>
-                <img src="../images/ia-logo-orange-full.png.png" height="60" alt="Inspire Academy logo orange">
-                <h1>SUBSCRIBE TO GET THE LATEST NEWS ABOUT INSPIRE ACADEMY</h1>
-            </div>
-            <div>
-                <form class="form-grid">
-                    <div class="input-container">
-                        <label for="Email">Email</label>
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="input-container">
-                        <label for="name">Name & Surname</label>
-                        <input type="text" placeholder="Name & Surname">
-                    </div>
-                    <div class="input-container ">
-                        <label for="Phone">Phone Number</label>
-                        <input class="phone-number-input" type="tel" placeholder="Phone Number">
-                    </div>
-                    <div class="input-container">
-                        <label for="school">Name of School</label>
-                        <input type="text" placeholder="Name of School">
-                    </div>
-                    <div class="input-container select-button-container">
-                        <label for="Grade">Grade</label>
-                        <select id="grade" name="Grade">
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
+        </div>
+        <main class="py-top">
+            <div class="successfull-modal_grid__container">
+                <div class="subscribe-modal__enclosure">
+                    <div class="subscribe-modal__grid">
+                        <div>
+                            <img src="../images/ia-logo-orange-full.png.png" width="auto" height="80">
+                        </div>
+                        <div>
+                            <p>SUBSCRIBE TO GET THE LATEST NEWS ABOUT INSPIRE ACADEMY</p>
+                        </div>
+                        <div class="icon-close">
+                            <i class="ri-close-line"></i>
+                        </div>
                     </div>
                     <div>
-                        <input class="continue-btn" type="button" placeholder="continue" value="CONTINUE">
+                        <form class="form-grid">
+                            <div class="input-container">
+                                <label for="Email">Email</label>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="input-container">
+                                <label for="name">Name & Surname</label>
+                                <input type="text" placeholder="Name & Surname">
+                            </div>
+                            <div class="input-container ">
+                                <label for="Phone">Phone Number</label>
+                                <input class="phone-number-input" type="tel" placeholder="Phone Number">
+                            </div>
+                            <div class="input-container">
+                                <label for="school">Name of School</label>
+                                <input type="text" placeholder="Name of School">
+                            </div>
+                            <div class="input-container select-button-container">
+                                <label for="Grade">Grade</label>
+                                <select id="grade" name="Grade">
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="center-btn">
+                                <input class="continue-btn" type="button" placeholder="continue" value="CONTINUE">
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </main>
+    <script src="../scripts/script.js"></script>
     </body>
 </html>

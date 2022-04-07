@@ -47,11 +47,14 @@ a {
     background-color: black;
     color: #F7F7F7;
     border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
     padding: .4rem 1rem;
     cursor: pointer;
-    right: 20px;
     font-variant: small-caps;
+}
+
+.sub-btn__black a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .mobile-navigation {
