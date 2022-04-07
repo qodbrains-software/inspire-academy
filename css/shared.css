@@ -806,6 +806,14 @@ form input {
 /* FOOTER MEDIA QUERIES DESKTOP VIEW STARTS!!!!!!!!!!! */
 
 @media (min-width: 40rem) {
+    .my-footer {
+        position: relative;
+        margin-top: 6rem;
+        background-color: #231f20;
+        height: 280px;
+        z-index: 200;
+    }
+
     .footer-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
