@@ -435,7 +435,6 @@ blockquote {
 
 .century22 .bold {
     font-size: 5.5em;
-    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -475,7 +474,6 @@ blockquote {
 .tutoring .bold {
     font-size: 5.5em;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
 }
 
 .tutoring .better {
@@ -553,11 +551,11 @@ blockquote {
         align-items: center;
     }
     .century22 .bold {
-        font-size: 2.8em;
+        font-size: 3.5rem;
         font-weight: bolder;
     }
     .century22 .better {
-        font-size: 2.2em;
+        font-size: 1.5rem;
         display: flex;
         justify-content: center;
     }
@@ -580,11 +578,11 @@ blockquote {
         overflow: hidden;
     }
     .tutoring .bold {
-        font-size: 3.5em;
+        font-size: 3.5rem;
         font-weight: bolder;
     }
     .tutoring .better {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         display: flex;
         width: 240px;
         text-align: center;
@@ -595,33 +593,28 @@ blockquote {
 
 /* media query  for fonts*/
 
-@media (min-width: 1460px) {
+@media (min-width: 1980px) {
     .century22 .bold {
-        font-size: 6em;
+        font-size: 9rem;
     }
-    .article-content {
-        font-size: 1em;
+    .tutoring .bold {
+        font-size: 9rem;
     }
-    .tutoring {
-        font-size: 1.4em;
+    .century22 .better {
+        font-size: 4rem;
     }
-}
-
-@media (min-width: 1940px) {
-    .century22 .bold {
-        font-size: 8em;
+    .tutoring .better {
+        font-size: 4rem;
     }
-    .article-content {
-        font-size: 1.9em;
-    }
-    .tutoring {
-        font-size: 2em;
+    .intro .article-text {
+        font-size: 2rem;
     }
     .dotsContainer .dots {
         padding: 10px;
     }
-    .century22 .better {
-        font-size: 4em;
+    .btn-buy,
+    .btn-read {
+        font-size: inherit;
     }
 }
 
