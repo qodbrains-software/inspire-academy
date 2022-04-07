@@ -79,7 +79,7 @@ a {
 }
 
 .mobile-navigation nav ul li a:hover,
-.mobile-navigation nav ul li a:focus {
+.mobile-navigation nav ul li a.current-mobile {
     color: #231F20;
 }
 
