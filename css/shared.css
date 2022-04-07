@@ -403,8 +403,6 @@
         font-size: 1.2rem;
         line-height: 1.3;
     }
-
-
     .second-sub_headers__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -872,107 +870,157 @@ form input {
 
 .main-method {
     position: fixed;
-    width: 100%;
-    height: 100vh;
-    display: none;
-    backdrop-filter: inherit;
+    border: solid black;
+    display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 450;
+    height: 100vh;
+    width: 100%;
+    z-index: 500;
+    display: none;
 }
 
 .method {
+    width: 500px;
     display: flex;
     flex-direction: column;
-    border-radius: 15px 15px 11px 11px;
-    background: white;
-    width: 450px;
-    height: 200px;
-}
-
-.method h2 {
-    position: relative;
-    background: #231f20;
-    text-align: center;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: lighter;
-    align-self: center;
-    padding: 10px;
-    border-radius: 8px 8px 0 0;
-    width: 100%;
-    height: 40px;
 }
 
-.top-h1 {
+.method input {
+    border: rgba(8, 8, 8, 0.3) solid 1px;
+    color: black;
+    transition: all 200ms ease-in;
+}
+
+.method input:hover {
+    border: rgba(255, 105, 105, 0.5) solid 1px;
+    box-shadow: 0 1px 5px rgba(255, 105, 105, 0.5);
+}
+
+.text-h3 {
     position: relative;
+    text-align: center;
+    background-color: #F1592C;
+    padding: 10px;
+    color: white;
+    border-radius: 12px 12px 0 0;
+    font-size: 0.7rem;
+    box-shadow: 0 2px 8px rgba(61, 61, 61, 0.5);
 }
 
-.top-h1 i {
+.text-h3 i {
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 10px;
-    color: #F1592C;
+    color: white;
+    font-size: 15px;
+    padding: 3px;
+    transition: all 200ms linear;
 }
 
-.top-h1 i:hover {
-    transition: .5s;
+.text-h3 i:hover {
     color: red;
 }
 
-.modal {
+.payfast-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.02rem;
+}
+
+.payfast-logo img {
+    padding: 10px 0px;
+    height: 50px;
+}
+
+.form-container {
     display: flex;
     justify-content: center;
 }
 
-.modal-payfast {
+.inputs-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    margin-top: 30px;
+    width: 60%;
 }
 
-.modal-payfast img {
-    height: 3rem;
+.inputs,
+.inputs2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    padding: 5px 0px;
 }
 
-.btn-payfast-proceed {
-    background: #231F20;
-    padding: 6px 20px;
-    margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 4px;
-    margin-top: 25px;
-    font-size: x-small;
-    transition: all 300ms ease-in;
+.inputs-number {
+    display: flex;
+    justify-content: space-between;
 }
 
-.btn-payfast-proceed:hover {
+.inputs2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs2 .number {
+    width: 100px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-payment {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.btn-payment button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding: 5px 15px;
+    background-color: rgb(216, 45, 45);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: white;
+    box-shadow: 0 2px 8px rgba(61, 61, 61, 0.5);
+    transition: all 200ms ease-in;
+}
+
+.btn-payment button:hover {
     background-color: #F1592C;
 }
 
-@media (max-width: 420px) {
+@media (min-width: 1920px) {
+    .payfast-logo img {
+        height: 70px;
+    }
+    .payfast-logo {
+        font-size: 1.5rem;
+    }
     .method {
-        width: 90%;
+        width: 800px;
     }
-    .top-h1 i {
-        top: 12px;
-        right: 14px;
-    }
-}
-
-@media (min-width: 1950px) {
-    .method {
-        width: 600px;
-        height: 240px;
-    }
-    .modal-payfast img {
-        height: 4.5em;
-    }
-    .btn-payfast-proceed {
+    .text-h3 {
         font-size: inherit;
+    }
+    .text-h3 i {
+        font-size: 1.5rem;
+    }
+    .inputs,
+    .inputs2 {
+        font-size: 1.4rem;
+        margin: 10px 0;
+    }
+    .btn-payment button {
+        font-size: 1.1rem;
     }
 }
 
