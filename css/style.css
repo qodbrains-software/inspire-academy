@@ -114,7 +114,7 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #EEEEEE;
     text-decoration: none;
-    transition: all 450ms ease-in;
+    transition: all 200ms ease-in;
 }
 
 .navigation-container nav ul li a:hover,
@@ -179,7 +179,7 @@ nav .hamburger-button::after {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 1rem;
     cursor: pointer;
-    transition: all 300ms ease-in;
+    transition: all 200ms ease-in;
 }
 
 .sub-btn2:hover {
@@ -202,7 +202,7 @@ nav .hamburger-button::after {
         padding: .4rem 1rem;
         cursor: pointer;
         right: 20px;
-        transition: all 300ms ease-in;
+        transition: all 200ms ease-in;
     }
     .sub-btn:hover {
         color: #F1592C;
@@ -218,7 +218,7 @@ nav .hamburger-button::after {
         font-family: Arial, Helvetica, sans-serif;
         padding: 0 1rem;
         cursor: pointer;
-        transition: all 300ms ease-in;
+        transition: all 200ms ease-in;
     }
     .sub-btn2:hover {
         color: #F1592C !important;
@@ -328,7 +328,7 @@ blockquote {
     font-weight: bolder;
     margin-right: 5px;
     cursor: pointer;
-    transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .btn-buy {
@@ -340,7 +340,7 @@ blockquote {
     font-size: 11px;
     font-weight: bolder;
     cursor: pointer;
-    transition: all 300ms ease-in;
+    transition: all 200ms ease-in;
 }
 
 .btn-buy:hover {
@@ -373,9 +373,9 @@ blockquote {
 
 .intro .article-text {
     font-family: Arial;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 10px;
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
 
@@ -427,6 +427,7 @@ blockquote {
 .century22 {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 50%;
     height: 90%;
@@ -435,12 +436,15 @@ blockquote {
 .century22 .bold {
     font-size: 5.5em;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .century22 .better {
-    font-size: 2em;
+    font-size: 2rem;
     display: flex;
     align-self: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
 }
 
 
@@ -462,19 +466,23 @@ blockquote {
 .tutoring {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     height: 90%;
     width: 50%;
 }
 
 .tutoring .bold {
-    font-size: 6.5em;
+    font-size: 5.5em;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
 
 .tutoring .better {
-    font-size: 2.5em;
+    font-size: 2rem;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 23px;
 }
 
 
@@ -484,20 +492,12 @@ blockquote {
 /* carousel */
 
 .max-container {
-    transition: .2s;
-    /* margin-top: 20px; */
     overflow: hidden;
 }
 
 .main-container {
     display: flex;
-    transition: .2s;
     align-items: center;
-    /* border: black solid; */
-}
-
-.main {
-    transition: .3s;
 }
 
 
@@ -525,11 +525,10 @@ blockquote {
         align-items: center;
     }
     .book .book-buy {
-        /* border: blue solid; */
+        margin-top: 60px;
         height: 100%;
     }
     .book {
-        /* border: solid blue; */
         height: 48%;
         display: flex;
         order: -1;
