@@ -319,6 +319,7 @@ blockquote {
     align-self: flex-start;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 
 .btn-read {
@@ -344,6 +345,19 @@ blockquote {
     font-weight: bolder;
     cursor: pointer;
     transition: all 200ms ease-in;
+}
+
+.mobile {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: none;
+}
+
+@media (max-width: 820px) {
+    .mobile {
+        display: flex;
+    }
 }
 
 .btn-buy:hover {
