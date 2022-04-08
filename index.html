@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../css/mobile-sub.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/subscribe.css">
     <title>Inspire Academy | Where tutoring is tailored just for you</title>
 </head>
 
@@ -44,41 +45,44 @@
             </div>
             <div>
                 <form class="form-container">
+                    <div class="loader-container">
+                        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                    </div>
                     <div class="inputs-container">
                         <div class="inputs">
                             <label for="name">First Name:</label>
-                            <input type="text" required>
+                            <input class="checkout-name" type="text" required>
                         </div>
                         <div class="inputs">
                             <label for="surname">Last Name:</label>
-                            <input type="text" required>
+                            <input class="checkout-last-name" type="text" required>
                         </div>
                         <div class="inputs">
                             <label for="Email">Email:</label>
-                            <input type="email" required>
+                            <input class="checkout-email" type="email" required>
                         </div>
                         <div class="inputs">
                             <label for="cellnumber">Cell Number:</label>
-                            <input type="tel" placeholder="071-234-5678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            <input class="checkout-cell" type="tel" placeholder="071-234-5678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         </div>
                         <div class="inputs">
                             <label for="address">Delivery Address:</label>
-                            <input type="text" required>
+                            <input class="checkout-address" type="text" required>
                         </div>
                         <div class="inputs-number">
                             <div class="inputs2">
                                 <label for="Quantity">Quantity</label>
-                                <input type="number" class="number" min="1" required>
+                                <input type="number" class="checkout-quantity number" min="1" value="1" required>
                             </div>
                             <div class="inputs2">
                                 <label for="total">Total</label>
-                                <h2 type="text" class="number num" readonly></h2>
+                                <h2 class="checkout-price-total number num"> R 350 </h2>
                             </div>
                         </div>
                     </div>
                 </form>
                 <div class="btn-payment">
-                    <button><a href="#"></a>PROCEED</a></button>
+                    <button class="proceed-to-pay">PROCEED</button>
                 </div>
             </div>
         </div>
@@ -266,6 +270,7 @@
     </main>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/script2.js"></script>
+    <script src="./scripts/payment.js"></script>
 </body>
 
 </html>
