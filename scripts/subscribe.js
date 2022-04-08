@@ -15,7 +15,6 @@ const grade = document.querySelector(".grade-input");
 const subBtn = document.querySelector(".subscribe-btn");
 
 const clearFields = () => {
-  // Clearing fields:
   grade.value = 10;
   school.value = "";
   cell.value = "";
