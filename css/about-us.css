@@ -40,6 +40,15 @@ body {
     line-height: 1.5;
 }
 
+.main-text {
+    display: flex;
+    justify-content: center;
+}
+
+.text-container {
+    width: 75%;
+}
+
 @media (max-width: 400px) {
     .about-us {
         width: 90%;
