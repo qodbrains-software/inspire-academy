@@ -14,42 +14,50 @@ const grade = document.querySelector(".grade-input");
 
 const subBtn = document.querySelector(".subscribe-btn");
 
+const clearFields = () => {
+  // Clearing fields:
+  grade.value = 10;
+  school.value = "";
+  cell.value = "";
+  email.value = "";
+  nameSurname.value = "";
+};
 
 const subscribe = () => {
+  let name;
+  let surname;
 
-    let name;
-    let surname;
+  if (nameSurname) {
+    name = nameSurname.value.split(" ")[0];
+    surname = nameSurname.value.split(" ")[1];
+  }
 
-    if(nameSurname){
-        name = nameSurname.value.split(" ")[0];
-        surname = nameSurname.value.split(" ")[1];
-    }
-
-    loaderContainer.style.display = 'flex';
-    fetch('https://safe-hollows-27802.herokuapp.com/subscribe', {
-        method: "post",
-        headers: { 'Content-Type' : 'application/json'},
-        body: JSON.stringify({
-            name,
-            surname,
-            email: email.value,
-            cell: cell.value,
-            school: school.value,
-            grade: grade.value
-        })
-    }).then(response => {
-        console.log(response);
-        loaderContainer.style.display = 'none';
+  loaderContainer.style.display = "flex";
+  fetch("https://safe-hollows-27802.herokuapp.com/subscribe", {
+    method: "post",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name,
+      surname,
+      email: email.value,
+      cell: cell.value,
+      school: school.value,
+      grade: grade.value,
+    }),
+  })
+    .then((response) => {
+      loaderContainer.style.display = "none";
+      clearFields();
     })
-    .catch(err => {
-        console.log(err);
-        loaderContainer.style.display = 'none';
-    })
-}
+    .catch((err) => {
+      loaderContainer.style.display = "none";
+      clearFields();
+    });
+};
 
-subBtn.addEventListener('click', () => {
-    subscribe();
-})
+subBtn.addEventListener("click", () => {
+  subscribe();
+});
 
 /*
 
