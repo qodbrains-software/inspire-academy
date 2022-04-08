@@ -811,7 +811,6 @@ form input {
         height: 280px;
         z-index: 200;
     }
-
     .footer-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -1006,7 +1005,7 @@ form input {
     background-color: #F1592C;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 2200px) {
     .payfast-logo img {
         height: 70px;
     }
