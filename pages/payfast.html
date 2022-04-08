@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="back-drop"></div>
+    <!-- Payment Processor Modal - qod-dante -->
+    <div class="main-pay">
+        <div class="method">
+            <div>
+                <div class="text-h3">
+                    <h3>FILL IN THE DETAILS TO PLACE YOUR ORDER</h3>
+                    <i class="ri-close-fill icon"></i>
+                </div>
+                <div class="payfast-logo">
+                    <img src="../images/PayFast-Logo-Colour.png" height="35" width="auto" alt="Payfast logo">
+                    <h5>PayFast(credit card/Instant EFT)</h5>
+                </div>
+            </div>
+            <div>
+                <form class="form-container">
+                    <div class="inputs-container">
+                        <div class="inputs">
+                            <label for="name">First Name:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="surname">Last Name:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="Email">Email:</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="cellnumber">Cell Number:</label>
+                            <input type="tel" placeholder="071-234-5678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="address">Delivery Address:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="inputs-number">
+                            <div class="inputs2">
+                                <label for="Quantity">Quantity</label>
+                                <input type="number" class="number" min="1" required>
+                            </div>
+                            <div class="inputs2">
+                                <label for="total">Total</label>
+                                <input type="number" class="number num">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-payment">
+                    <button><a href="#"></a>PROCEED</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="navigation-background__color">
+            <div class="navigation-container">
+                <div class="navigation-logo">
+                    <a href="../index.html" title="Refresh Page">
+                        <img src="../images/logo-light.png" height="60" alt="Inspire Academy logo white">
+                    </a>
+                </div>
+                <nav>
+                    <div class="hamburger-container">
+                        <div class="hamburger-button">
+                            <div class="before-after"></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="pages/inspire-books.html">INSPIRE BOOKS</a></li>
+                        <li><a href="pages/22century.html">22nd CENTURY EDUCATION</a></li>
+                        <li><a href="pages/tutoring.html">TUTORING</a></li>
+                        <li><a href="pages/service.html">SERVICES</a></li>
+                        <li><a href="pages/aboutus.html">ABOUT US</a></li>
+                    </ul>
+                </nav>
+                <div class="sub-btn">
+                    <p>subscribe</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-navigation">
+        <nav>
+            <ul>
+                <li><a href="pages/inspire-books.html">INSPIRE BOOKS</a></li>
+                <li><a href="pages/22century.html">22nd CENTURY EDUCATION</a></li>
+                <li><a href="pages/tutoring.html">TUTORING</a></li>
+                <li><a href="pages/service.html">SERVICES</a></li>
+                <li><a href="pages/aboutus.html">ABOUT US</a></li>
+                <div class="sub-btn__black">
+                    <p><a href="pages/subscribe-form.html">subscribe</a></p>
+                </div>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="successfull-modal_grid__container">
+        <div class="subscribe-modal__enclosure">
+            <div class="subscribe-modal__grid">
+                <div>
+                    <img src="../images/ia-logo-orange-full.png.png" width="auto" height="80">
+                </div>
+                <div>
+                    <p>SUBSCRIBE TO GET THE LATEST NEWS ABOUT INSPIRE ACADEMY</p>
+                </div>
+                <div class="icon-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div>
+                <form class="form-grid">
+                    <div class="input-container">
+                        <label for="Email">Email</label>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-container">
+                        <label for="name">Name & Surname</label>
+                        <input type="text" placeholder="Name & Surname">
+                    </div>
+                    <div class="input-container ">
+                        <label for="Phone">Phone Number</label>
+                        <input class="phone-number-input" type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="input-container">
+                        <label for="school">Name of School</label>
+                        <input type="text" placeholder="Name of School">
+                    </div>
+                    <div class="input-container select-button-container">
+                        <label for="Grade">Grade</label>
+                        <select id="grade" name="Grade">
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="continue-btn" type="button" placeholder="continue" value="CONTINUE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
