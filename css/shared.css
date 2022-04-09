@@ -1032,6 +1032,19 @@ form input {
     flex-direction: column;
 }
 
+/* ALIGNED THE TOTAL NUMBER AND INSERTED THE BORDER STARTS BY CODEDILLA */
+.grid-num {
+    display: grid;
+}
+
+.grid-num .num {
+    border: 1px solid #ccc;
+    padding: .4rem 0.6rem;
+    border-radius: 5px;
+    align-self: center;
+}
+/* ALIGNED THE TOTAL NUMBER AND INSERTED THE BORDER ENDS BY CODEDILLA */
+
 .inputs2 .number {
     width: 100px;
     font-size: 0.8rem;
