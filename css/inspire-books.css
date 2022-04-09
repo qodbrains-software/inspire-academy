@@ -107,9 +107,12 @@ body {
 
 .mobile-buy {
     position: absolute;
-    /* border: solid black; */
-/* margin: auto; */
-    /* display: none; */
+}
+
+@media (min-width: 820px) {
+    .mobile-buy{
+        display: none;
+    }
 }
 
 .buttons-inspire .btn-buybook:hover {
