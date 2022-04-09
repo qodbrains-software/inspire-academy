@@ -42,14 +42,14 @@ proceedBtn.addEventListener('click', () => {
         })
         .then(async response => {
             const data = await response.json();
-            loaderContainer.style.display = "none";
             location.href = data;
+            loaderContainer.style.display = "none";
         })
         .catch(err => {
-            console.log(err);
             loaderContainer.style.display = "none";
         })
     } else {
+        // TODO: handle validation errors.
         alert("Please provide all required fields")
     }
 })
