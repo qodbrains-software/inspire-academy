@@ -943,7 +943,6 @@ form input {
     justify-content: center;
     align-items: center;
     width: 100%;
-    z-index: 500;
 }
 
 .method {
@@ -1088,8 +1087,7 @@ form input {
     .main-method {
         align-items: flex-start;
         width: 100%;
-        z-index: 0;
-    }
+        }
     .method {
         width: 100%;
         border-radius: 0px;

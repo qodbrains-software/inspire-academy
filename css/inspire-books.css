@@ -88,37 +88,35 @@ body {
     align-items: center;
     font-size: 12px;
     justify-content: center;
+    position: relative;
+    /* border: #231F20 solid; */
+    width: 160px;
+    margin: auto;
 }
 
 .buttons-inspire .btn-buybook {
     color: black;
     padding: 8px 10px;
     background-color: #FF9F00;
-    margin-right: 20px;
+    margin-right: 20px; 
     border-radius: 2px;
     font-weight: bolder;
     cursor: pointer;
     transition: all 200ms ease-in;
 }
 
-.buttons-inspire .btn-download {
-    color: whitesmoke;
-    border-radius: 2px;
-    background-color: #0076FF;
-    text-align: center;
-    padding: 8px 10px;
-    font-weight: bolder;
-    cursor: pointer;
-    transition: all 200ms ease-in;
+.mobile-buy {
+    position: absolute;
+    /* border: solid black; */
+/* margin: auto; */
+    /* display: none; */
 }
 
 .buttons-inspire .btn-buybook:hover {
     background-color: #DE8B01;
 }
 
-.buttons-inspire .btn-download:hover {
-    background-color: #0468DC;
-}
+
 
 .grid {
     display: grid;
