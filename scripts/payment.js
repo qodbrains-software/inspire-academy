@@ -37,7 +37,9 @@ proceedBtn.addEventListener('click', () => {
                 name_first: checkoutName.value,
                 name_last: checkoutLastName.value,
                 address: checkoutAddress.value,
-                quantity: checkoutQuantity.value
+                quantity: checkoutQuantity.value,
+                cell: checkoutCell.value
+
             })
         })
         .then(async response => {
