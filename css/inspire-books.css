@@ -86,6 +86,7 @@ body {
 .reviews h4 {
     font-size: 1em;
     font-family: Arial, Helvetica;
+    padding: 10px 0px;
 }
 
 /* .buttons {
@@ -165,8 +166,7 @@ body {
         justify-self: center;
         align-self: flex-start;
         text-align: center;
-    border: soliSd black;
-    /* width: 100%; */
+        margin: auto;
     }
     .reviews {
         grid-row: 1;
@@ -178,14 +178,20 @@ body {
     .book-description {
         grid-row: 3;
         grid-column: 1;
+        display: flex;
+justify-content: center;
     }
+.article-container{
+    width: 90%;
+}
+
     .reviews h1 {
         font-size: 2.5em;
     }
     .book-description p {
         background-color: white;
         padding: 20px;
-        width: 80%;
+        width: 100%;
         font-family: arial;
         font-size: 1rem;
         line-height: 1.3;
