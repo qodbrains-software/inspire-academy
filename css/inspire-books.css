@@ -3,12 +3,26 @@ body {
     padding-top: 4.5rem;
 }
 
+.review-stars{
+    padding: 10px 0px 10px 0px;
+    font-size: x-large;
+
+}
+
 .review-stars i {
+    padding: 10px 0px 100px 0px;
     color: #F1592C;
 }
 
 .review-stars h5 {
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0px 10px 0px;
+}
+
+.review-stars .price {
+    font-size: 2.2rem;
+    background-color: #E9E7E5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #star-number {
@@ -17,7 +31,7 @@ body {
 }
 
 .book-inspire img {
-    height: 370px;
+    height: 570px;
 }
 
 .aboutbook .logo-inspire {
@@ -61,6 +75,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .reviews h1 {
     font-size: 3.5em;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -72,10 +88,10 @@ body {
     font-family: Arial, Helvetica;
 }
 
-.buttons {
+/* .buttons {
     display: flex;
     justify-content: center;
-}
+} */
 
 .reviews {
     grid-column: 2 / span 2;
@@ -89,16 +105,13 @@ body {
     font-size: 12px;
     justify-content: center;
     position: relative;
-    /* border: #231F20 solid; */
-    width: 160px;
-    margin: auto;
+    width: 402px;
 }
 
 .buttons-inspire .btn-buybook {
     color: black;
     padding: 8px 10px;
     background-color: #FF9F00;
-    margin-right: 20px; 
     border-radius: 2px;
     font-weight: bolder;
     cursor: pointer;
@@ -130,6 +143,7 @@ body {
     grid-row: 1 / span 2;
     justify-self: end;
     margin-right: 30px;
+    margin: 0 0 0 6px;
 }
 
 
@@ -152,7 +166,8 @@ body {
         justify-self: center;
         align-self: flex-start;
         text-align: center;
-        width: 100%;
+    border: soliSd black;
+    /* width: 100%; */
     }
     .reviews {
         grid-row: 1;
