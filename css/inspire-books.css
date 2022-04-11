@@ -31,7 +31,7 @@ body {
 }
 
 .book-inspire img {
-    height: 570px;
+    height: 50vh;
 }
 
 .aboutbook .logo-inspire {
@@ -105,7 +105,7 @@ body {
     font-size: 12px;
     justify-content: center;
     position: relative;
-    width: 402px;
+    width: 100%;
 }
 
 .buttons-inspire .btn-buybook {
