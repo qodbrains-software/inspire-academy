@@ -910,13 +910,21 @@ form input {
 
 /* MEDIA QUERIES IPAD VIEW */
 
-@media (min-width: 50.625rem) and (max-width: 50.625rem) {
+@media (min-width: 50rem) and (max-width: 50.625rem) {
     .footer-container .third {
-        align-self: flex-end;
+        align-self: flex-start;
         justify-self: start;
     }
     .footer-container i {
         padding: 0;
+    }
+
+    .footer-container .fifth {
+        grid-column: 4 / span 2;
+        grid-row: 2;
+        align-self: center;
+        justify-self: center;
+        color: #eeeeee;
     }
 }
 

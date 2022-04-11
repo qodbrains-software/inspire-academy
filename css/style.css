@@ -183,11 +183,26 @@ nav .hamburger-button::after {
     padding: 0 1rem;
     cursor: pointer;
     transition: all 200ms ease-in;
+    display: none;
 }
 
 .sub-btn2:hover {
     color: #F1592C !important;
     background-color: #F7F7F7;
+}
+
+@media (min-width: 50rem) and (max-width: 50.625rem) {
+    .sub-btn2 {
+        color: #EEEEEE;
+        display: inline-block;
+        font-variant: small-caps;
+        background-color: #F1592C;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0 1rem;
+        cursor: pointer;
+        transition: all 200ms ease-in;
+    }
 }
 
 
