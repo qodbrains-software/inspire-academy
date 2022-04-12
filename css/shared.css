@@ -938,8 +938,9 @@ form input {
     position: fixed;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    /* align-items: center; */
+    /* height: 100vh; */
+    bottom: 10%;
     width: 100%;
     z-index: 500;
     display: none;
