@@ -540,6 +540,8 @@ blockquote {
     .section-container,
     .section-container_22century,
     .section-container_tutoring {
+        position: fixed;
+        top: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
