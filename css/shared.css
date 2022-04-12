@@ -165,8 +165,10 @@
 }
 
 .input-container input:focus,
-.input-container input:active {
-    border: 2px solid #f1592c;
+.input-container input:active,
+.input-container input:hover {
+    border: rgba(255, 105, 105, 0.5) solid 1px;
+    box-shadow: 0 1px 5px rgba(255, 105, 105, 0.5);
 }
 
 .form-grid .continue-btn {
@@ -293,9 +295,13 @@
     }
     .input-container input {
         display: inline-block;
-        background-color: rgb(172, 172, 172);
-        color: rgb(219, 217, 217);
-        border: 2px solid transparent;
+        color: #000;
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 0.4rem 0.6rem;
+        justify-self: center;
+        width: 70%;
+        border: 1px solid #CCC;
         outline: none;
     }
     .input-container label {
