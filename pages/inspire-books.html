@@ -19,11 +19,11 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Inspire Books | Inspire Academy</title>
+    <link rel="stylesheet" href="../css/subscribe.css">
     <link rel="stylesheet" href="../css/mobile-sub.css">
     <link rel="stylesheet" href="../css/inspire-books.css">
     <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/subscribe.css">
 </head>
 
 <body>
@@ -141,6 +141,9 @@
                     <i class="ri-close-line"></i>
                 </div>
             </div>
+            <div class="loader-container">
+                <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
             <div>
                 <form class="form-grid">
                     <div class="input-container">
@@ -167,9 +170,7 @@
                                         <option value="12">12</option>
                                     </select>
                     </div>
-                    <div>
-                        <input class="continue-btn" type="button" placeholder="continue" value="CONTINUE">
-                    </div>
+                    <p class="continue-btn subscribe-btn">continue</p>
                 </form>
             </div>
         </div>
@@ -362,6 +363,7 @@
     <script src="../scripts/script.js"></script>
     <script src="../scripts/inspirebook.js"></script>
     <script src="../scripts/payment.js"></script>
+    <script src="../scripts/subscribe.js"></script>
 </body>
 
 </html>
