@@ -406,7 +406,6 @@
         grid-column: 2 / span 2;
         grid-row: 1 / span 2;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 1.2rem;
         line-height: 1.3;
     }
     .second-sub_headers__grid {
@@ -432,7 +431,6 @@
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 1.2rem;
         line-height: 1.3;
     }
 }
@@ -544,7 +542,6 @@
     }
     .reviewer-grid__container p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 1.2rem;
         line-height: 1.3;
     }
     .reviewer-grid__container :nth-child(1) {
@@ -1157,3 +1154,30 @@ form input {
 
 
 /* End of payment method */
+
+/* MEDIA QUERIES FOR FONTS!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media(min-width: 113rem) {
+    .first-sub_headers__grid :nth-child(3) {
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 2;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+    .second-sub_headers__grid :nth-child(3) {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+    .reviewer-grid__container p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+}
+

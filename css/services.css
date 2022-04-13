@@ -10,7 +10,7 @@ body {
 }
 
 .services-header {
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
@@ -73,7 +73,38 @@ body {
         color: #EEEEEE;
     }
 
+    .saturday-classes {
+        display: grid;
+        gap: 1rem;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 4rem;
+    }
 
+    .services-header {
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+
+    .services-header p {
+        width: 65%;
+        margin: auto;
+        padding-top: 4rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.3;
+    }
+
+    .saturday-classes p {
+        text-align: start;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.3;
+    }
+    
+}
+
+/* MEDIA QUERIES FOR FONTS!!!!!!!!!!!!!!!!!!!!!!!! */
+@media(min-width: 113rem) {
     .services-header p {
         padding-top: 4rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -87,5 +118,5 @@ body {
         font-size: 1.2rem;
         line-height: 1.3;
     }
-    
+
 }
