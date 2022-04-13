@@ -3,10 +3,9 @@ body {
     padding-top: 4.5rem;
 }
 
-.review-stars{
+.review-stars {
     padding: 10px 0px 10px 0px;
     font-size: x-large;
-
 }
 
 .review-stars i {
@@ -75,8 +74,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .reviews h1 {
     font-size: 3.5em;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -88,11 +85,6 @@ body {
     font-family: Arial, Helvetica;
     padding: 10px 0px;
 }
-
-/* .buttons {
-    display: flex;
-    justify-content: center;
-} */
 
 .reviews {
     grid-column: 2 / span 2;
@@ -124,7 +116,7 @@ body {
 }
 
 @media (min-width: 820px) {
-    .mobile-buy{
+    .mobile-buy {
         display: none;
     }
 }
@@ -133,17 +125,22 @@ body {
     background-color: #DE8B01;
 }
 
-
-
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-left: 15px;
 }
 
 .book-btn {
     grid-row: 1 / span 2;
     justify-self: end;
     margin-right: 30px;
+}
+
+@media (max-width: 420px) {
+    .grid {
+        padding-left: 0px;
+    }
 }
 
 
@@ -179,12 +176,11 @@ body {
         grid-row: 3;
         grid-column: 1;
         display: flex;
-justify-content: center;
+        justify-content: center;
     }
-.article-container{
-    width: 90%;
-}
-
+    .article-container {
+        width: 90%;
+    }
     .reviews h1 {
         font-size: 2.5em;
     }
