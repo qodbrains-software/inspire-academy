@@ -751,6 +751,11 @@
     }
 }
 
+@media (min-width:2200px) {
+    .sticky{
+        height: 100vh;
+    }
+}
 
 /* MORE INFO MEDIA QUERIES ENDS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
