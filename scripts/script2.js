@@ -66,7 +66,7 @@ let slider = () => {
         if (index === 3) {
             index = 0;
         }
-    }, 4000)
+    }, 5000)
 }
 slider()
 
