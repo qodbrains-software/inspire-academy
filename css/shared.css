@@ -349,6 +349,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.first-sub_headers__grid a {
+    text-decoration: underline;
+}
+
 .second-sub_headers__grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -373,6 +377,10 @@
 
 .second-sub_headers__grid :nth-child(3) {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.second-sub_headers__grid a {
+    text-decoration: underline;
 }
 
 .century-page p {
