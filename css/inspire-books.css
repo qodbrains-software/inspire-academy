@@ -22,6 +22,7 @@ body {
     font-size: 2.2rem;
     background-color: #E9E7E5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 0;
 }
 
 #star-number {
