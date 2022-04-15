@@ -654,3 +654,9 @@ blockquote {
 
 
 /* End of media queries */
+
+/* Removing underling from <abbr> elements */
+
+abbr {
+    text-decoration: none;
+}
