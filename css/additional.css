@@ -1,0 +1,23 @@
+.nsc-resources a, .ieb-resources a {
+    color: #fff;
+    padding: 0px 5px;
+}
+
+.nsc-resources, .ieb-resources {
+    padding: 10px 5px;
+    margin-top: 20px;
+    background-color: #F1592C;
+    border: none;
+    transition: all 0.5s;
+}
+
+.nsc-resources:hover {
+    background-color: #231F20;
+}
+
+
+.ieb-resources:hover {
+    background-color: #231F20;
+}
+
+
