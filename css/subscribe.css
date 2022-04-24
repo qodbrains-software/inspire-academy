@@ -40,7 +40,8 @@ Loading Indicator START:
 
 
 
-  .loader-container {
+  .loader-container,
+  .desk-loader {
       position: absolute;
       display: none;
       justify-content: center;

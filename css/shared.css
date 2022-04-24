@@ -21,6 +21,9 @@
     width: 100%;
     z-index: 400;
 }
+.subscribed-successfull {
+    z-index: 500;
+}
 
 .successfull-modal__grid {
     display: grid;
