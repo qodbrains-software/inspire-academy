@@ -159,15 +159,18 @@
                     <i class="ri-close-line"></i>
                 </div>
             </div>
+            <div class="loader-container">
+                <div class="lds-roller"></div>
+            </div>
             <div>
                 <form class="form-grid">
                     <div class="input-container">
                         <label for="Email">Email</label>
-                        <input type="email" placeholder="Email">
+                        <input class="email-input" type="email" placeholder="Email">
                     </div>
                     <div class="input-container">
                         <label for="name">Name & Surname</label>
-                        <input type="text" placeholder="Name & Surname">
+                        <input class="name-surname-input" type="text" placeholder="Name & Surname">
                     </div>
                     <div class="input-container ">
                         <label for="Phone">Phone Number</label>
@@ -175,18 +178,18 @@
                     </div>
                     <div class="input-container">
                         <label for="school">Name of School</label>
-                        <input type="text" placeholder="Name of School">
+                        <input class="name-of-school-input" type="text" placeholder="Name of School">
                     </div>
                     <div class="input-container select-button-container">
                         <label for="Grade">Grade</label>
-                        <select id="grade" name="Grade">
+                        <select class="grade-input" id="grade" name="Grade">
                             <option value="10">10</option>
                             <option value="11">11</option>
                             <option value="12">12</option>
                         </select>
                     </div>
                     <div>
-                        <input class="continue-btn" type="button" placeholder="continue" value="CONTINUE">
+                        <input class="continue-btn subscribe-btn" type="button" placeholder="continue" value="CONTINUE">
                     </div>
                 </form>
             </div>
@@ -291,6 +294,7 @@
     <script src="./scripts/script.js"></script>
     <script src="./scripts/script2.js"></script>
     <script src="./scripts/payment.js"></script>
+    <script src="./scripts/subscribe.js"></script>
 </body>
 
 </html>
