@@ -11,6 +11,9 @@ const nameSurname = document.querySelector(".name-surname-input");
 const cell = document.querySelector(".phone-number-input");
 const school = document.querySelector(".name-of-school-input");
 const grade = document.querySelector(".grade-input");
+const backDropContainer = document.querySelector(".subscribed-successfull");
+const successfullModal = document.querySelector(".successfull-modal__grid");
+const successfullButton = document.querySelector(".successfull-btn")
 
 const subBtn = document.querySelector(".subscribe-btn");
 
@@ -47,6 +50,8 @@ const subscribe = () => {
     .then((response) => {
       loaderContainer.style.display = "none";
       clearFields();
+      backDropContainer.style.display = "grid";
+      successfullModal.style.display = "grid";
     })
     .catch((err) => {
       loaderContainer.style.display = "none";
@@ -63,3 +68,9 @@ subBtn.addEventListener("click", () => {
 SUBSCRIBE LOGIC ENDS:
 
 */
+
+// successefully sub modal close
+successfullButton.addEventListener("click", () => {
+  backDropContainer.style.display = "none";
+  successfullModal.style.display = "none";
+});

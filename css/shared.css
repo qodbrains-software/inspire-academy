@@ -6,7 +6,8 @@
 
 /* SUCCESSFULLY AND SUBSCRIBE MODAL STYLE STARTS!!!!!!!!!!!!!!!!!!!!!!! */
 
-.successfull-modal_grid__container {
+.successfull-modal_grid__container,
+.subscribed-successfull {
     position: fixed;
     display: grid;
     justify-content: center;
@@ -118,7 +119,7 @@
         grid-template-rows: repeat(2, 1fr);
         border-radius: 5px;
         background-color: #EEEEEE;
-        /* display: none; */
+        display: none;
         height: 300px;
         width: 600px;
     }
@@ -156,13 +157,6 @@
     padding: .5rem 0;
 }
 
-.input-container input {
-    display: inline-block;
-    background-color: rgb(172, 172, 172);
-    color: rgb(219, 217, 217);
-    border: 2px solid transparent;
-    outline: none;
-}
 
 .input-container input:focus,
 .input-container input:active,
@@ -189,7 +183,7 @@
         grid-template-rows: repeat(2, 1fr);
         border-radius: 5px;
         background-color: #eeeeee;
-        display: none;
+        display: grid;
         height: 300px;
         width: 600px;
     }
