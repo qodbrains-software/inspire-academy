@@ -6,20 +6,21 @@ body {
     background-color: whitesmoke;
 }
 
-.subscribe-modal__grid {
+
+.subscribe_mobile-modal__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding: 1rem 0;
 }
 
-.subscribe-modal__grid :nth-child(1) {
+.subscribe_mobile-modal__grid :nth-child(1) {
     grid-column: 2 / span 1;
     align-self: flex-end;
     justify-self: center;
 }
 
-.subscribe-modal__grid :nth-child(2) {
+.subscribe_mobile-modal__grid :nth-child(2) {
     grid-column: 1 / span 3;
     grid-row: 2;
     justify-self: center;
