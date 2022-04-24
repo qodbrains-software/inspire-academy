@@ -4,7 +4,7 @@ SUBSCRIBE LOGIC STARTS:
 
 */
 
-const loaderContainer = document.querySelector(".loader-container");
+const loaderContainerSub = document.querySelector(".loader-container");
 
 const email = document.querySelector(".email-input");
 const nameSurname = document.querySelector(".name-surname-input");
@@ -26,6 +26,7 @@ const clearFields = () => {
 };
 
 const subscribe = () => {
+  debugger;
   let name;
   let surname;
 
@@ -34,7 +35,7 @@ const subscribe = () => {
     surname = nameSurname.value.split(" ")[1];
   }
 
-  loaderContainer.style.display = "flex";
+  loaderContainerSub.style.display = "flex";
   fetch("https://safe-hollows-27802.herokuapp.com/subscribe", {
     method: "post",
     headers: { "Content-Type": "application/json" },
@@ -47,19 +48,27 @@ const subscribe = () => {
       grade: grade.value,
     }),
   })
-    .then((response) => {
-      loaderContainer.style.display = "none";
+    .then(async (response) => {
+      loaderContainerSub.style.display = "none";
       clearFields();
       backDropContainer.style.display = "grid";
       successfullModal.style.display = "grid";
     })
     .catch((err) => {
-      loaderContainer.style.display = "none";
+      loaderContainerSub.style.display = "none";
       clearFields();
     });
 };
 
 subBtn.addEventListener("click", () => {
+  if(
+    school.value.length <= 0 ||
+    cell.value.length <= 0 ||
+    email.value.length <= 0 ||
+    nameSurname.value.length <= 0) {
+      alert("Please provided input for all fields");
+      return;
+    }
   subscribe();
 });
 
