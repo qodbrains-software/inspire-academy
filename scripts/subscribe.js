@@ -26,7 +26,6 @@ const clearFields = () => {
 };
 
 const subscribe = () => {
-  debugger;
   let name;
   let surname;
 
