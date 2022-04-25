@@ -553,21 +553,29 @@ blockquote {
         flex-direction: column;
         align-items: center;
     }
-    .book .book-buy {
-        margin-top: 60px;
-        height: 100%;
-    }
-    .book {
-        height: 48%;
-        display: flex;
-        order: -1;
-    }
+
     .intro .article-text {
         font-family: Arial;
         width: 100%;
     }
-    .h1-main {
+
+    .book, .logo-none {
         display: none;
+
+    }
+
+
+    .h1-main {
+        height: 50%;
+        justify-content: center;
+    }
+
+
+    .logo-flex img{
+        height: 55%;
+        width: auto;
+        margin: 0;
+        display: flex;
     }
     .product-btns {
         align-self: center;
