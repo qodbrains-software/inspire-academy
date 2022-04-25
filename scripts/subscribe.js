@@ -4,7 +4,6 @@ SUBSCRIBE LOGIC STARTS:
 
 */
 
-const loaderContainerSub = document.querySelector(".loader-container");
 const deskLoader =document.querySelector(".desk-loader");
 const email = document.querySelector(".email-input");
 const nameSurname = document.querySelector(".name-surname-input");
@@ -26,7 +25,6 @@ const clearFields = () => {
 };
 
 const subscribe = () => {
-  debugger;
   let name;
   let surname;
 
@@ -35,7 +33,6 @@ const subscribe = () => {
     surname = nameSurname.value.split(" ")[1];
   }
   deskLoader.style.display = "flex";
-  loaderContainerSub.style.display = "flex";
   fetch("https://safe-hollows-27802.herokuapp.com/subscribe", {
     method: "post",
     headers: { "Content-Type": "application/json" },
@@ -49,14 +46,12 @@ const subscribe = () => {
     }),
   })
     .then(async (response) => {
-      loaderContainerSub.style.display = "none";
       deskLoader.style.display = "none";
       clearFields();
       backDropContainer.style.display = "grid";
       successfullModal.style.display = "grid";
     })
     .catch((err) => {
-      loaderContainerSub.style.display = "none";
       deskLoader.style.display = "none";
       clearFields();
     });
